@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where You Stand In Your Light &middot; We, Women of Light&trade;</title>
+<meta name="description" content="Your personalized We, Women of Light&trade; profile.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://wewomenoflight.com/women/result">
+<meta name="theme-color" content="#f7f2e8">
+<link rel="icon" href="/assets/img/favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1a15;--parch:#f7f2e8;--parch-2:#efe7d6;--panel:#17130d;--gold:#b0842b;--gold-bright:#fecb3e;--muted:#6b6357;--line:rgba(29,26,21,.12)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--parch);color:var(--ink);font-family:Raleway,-apple-system,Segoe UI,Roboto,sans-serif;font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.res{max-width:640px;margin:0 auto;padding:72px 28px 88px;text-align:center}
+.res__eyebrow{font-family:Cinzel;font-weight:500;letter-spacing:.3em;text-transform:uppercase;font-size:21px;line-height:1.34;color:var(--gold);margin:0 0 18px}
+.res__score{font-family:Cinzel;font-weight:400;letter-spacing:.14em;font-size:15px;color:var(--muted);margin:0 0 10px}
+.res__score b{color:var(--gold);font-weight:500}
+.res__title{font-family:Cinzel;font-weight:500;font-size:clamp(30px,4.4vw,46px);line-height:1.1;letter-spacing:.015em;color:var(--ink);margin:0 0 22px}
+.res__lead{font-family:Cinzel;font-weight:400;font-size:clamp(19px,2.4vw,23px);line-height:1.42;color:var(--gold);margin:0 auto 30px;max-width:34rem}
+.res__rule{width:60px;height:2px;background:var(--gold);margin:0 auto 30px;opacity:.55}
+.res__body{text-align:left;max-width:34rem;margin:0 auto 34px}
+.res__body p{font-family:Raleway;font-weight:400;font-size:17px;line-height:1.78;color:#3a352c;margin:0 0 18px}
+.res__body p.veil{font-family:Raleway;font-weight:400;font-style:italic;font-size:18px;line-height:1.72;color:var(--gold)}
+.btn{font-family:Raleway;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:12px;border-radius:2px;padding:15px 30px;text-decoration:none;display:inline-block;transition:.2s;cursor:pointer;border:1.5px solid transparent}
+.btn-solid{background:var(--gold);color:#fff}.btn-solid:hover{background:#96701f}
+.res__inbox{font-family:Raleway;font-weight:400;font-style:italic;font-size:14px;color:var(--muted);margin:22px 0 0}
+@media (max-width:680px){
+  .res{padding:52px 22px 66px}
+  .res__eyebrow{font-size:14px;letter-spacing:.16em}
+  .res__score{font-size:13px}
+  .res__body p{font-size:15.5px}
+  .res__body p.veil{font-size:16.5px}
+}
+</style>
+</head>
+<body>
+<main class="res">
+  <div class="res__eyebrow" id="res-eyebrow">Where You Stand In Your Light</div>
+  <div class="res__score" id="res-score"></div>
+  <h1 class="res__title" id="res-title"></h1>
+  <p class="res__lead" id="res-lead"></p>
+  <div class="res__rule" id="res-rule"></div>
+  <div class="res__body" id="res-body"></div>
+  <a class="btn btn-solid" id="res-cta" href="https://wewomenoflight.com" target="_blank" rel="noopener noreferrer">Step Into We, Women of Light&trade; &rarr;</a>
+  <p class="res__inbox" id="res-inbox">A copy of your profile is on its way to your inbox.</p>
+</main>
+
+<script>
+(function(){
+  /* ===================================================================
+     BAND COPY — DRAFT, NOT FINAL.
+
+     The four blocks below were written to the structure of the NME
+     result page so the page can be tested end to end. They are NOT
+     Iana's copy. Every lead and body paragraph needs replacing with
+     the WWOL equivalent of "NME QUIZ QUESTIONS v1.4" before launch.
+
+     Structure per band, matching NME exactly:
+       lead    one line, Cinzel, gold
+       body[0] plain paragraph — what this woman's pattern looks like
+       body[1] {veil:...} — the named veil, italic bronze. Exactly one
+               per band, so the italic beat lands consistently.
+       body[2] plain paragraph — the program as the answer to it
+
+     NME's four veils run: self-abandonment, self-betrayal,
+     self-rejection, then expansion rather than a veil at the top band.
+     The drafts below follow the same progression.
+     =================================================================== */
+  var BANDS = [
+    {min:14, max:24, name:"The Veiled Woman",
+     lead:"You learned early that it was safer to disappear than to be seen.",
+     body:[
+      "So you became who each room needed. You carry the family's expectations, the parent who needed rescuing, the role you were handed before you had language for it. Your own passion and brilliance stay mostly unused, not because they are absent, but because there has never been a safe place to set them down.",
+      {veil:"This is the veil of self-abandonment: years spent meeting everyone else\u2019s needs ahead of your own, until your own frequency became a stranger\u2019s language. It shows in how you shut down when you are upset, how you brace instead of open in intimacy, how far you have drifted from the vision that is still calling you."},
+      "We, Women of Light\u2122 exists for exactly this starting point. The disappearing kept you safe. It was built for a season, and the season is over."
+     ]},
+    {min:25, max:35, name:"The Awakening Woman",
+     lead:"You are beginning to see the pattern instead of only living inside it.",
+     body:[
+      "You notice when you shift out of yourself to match whoever you are with. You catch the fear of what others think before it makes the decision for you. The family weight you once carried without question, you can now name and have begun to set down.",
+      {veil:"This is the veil of self-betrayal: staying in the role, the relationship, the old strategy even after you can see it clearly, because the known pattern still feels safer than the unknown self. You have had glimpses of your true frequency. A glimpse is proof. Living there is still ahead."},
+      "We, Women of Light\u2122 exists to turn what you can now see into what you actually live. This is the stage built for a woman exactly like you: awake, in motion, ready for structure."
+     ]},
+    {min:36, max:46, name:"The Rising Woman",
+     lead:"You are already doing real work, and you can feel the ceiling.",
+     body:[
+      "You hold your ground more often than not. You express yourself, even when it takes effort. You are actively building toward the vision that calls you, and you have separated enough of your own needs from your family\u2019s to know the difference.",
+      {veil:"This is the veil of self-rejection, showing up now as a ceiling rather than a wound: the edge where an old fear of being too much, or an old habit of doing whatever it takes, still caps how fully you let your light move through you."},
+      "We, Women of Light\u2122 exists to take a woman already in motion into full embodiment: her creative power, her sexual energy, her financial authority, and her voice moving as one. This is where you stop managing the rise and start living on the other side of it."
+     ]},
+    {min:47, max:56, name:"The Luminous Woman",
+     lead:"You already know who you are becoming.",
+     body:[
+      "You have done the work of separating your Self from the roles you were handed, the relationships that took more than they gave, the family weight that was never yours. You live in your whole Self, and it shows in how you love, how you create, how you hold your frequency in any room.",
+      {veil:"What comes next moves past readiness and into expansion: greater financial power, deeper surrender in your body and your sexuality, and a wider reach for the impact you came here to make."},
+      "This is your full invitation into We, Women of Light\u2122: the place where creative power, sexual wholeness, financial authority, and soul-level purpose meet as one force in a woman fully in her light."
+     ]}
+  ];
+
+  var MAXSCORE = 56;
+
+  function bandFor(sc){
+    if (!isFinite(sc)) return null;
+    for (var k=0;k<BANDS.length;k++){ if (sc>=BANDS[k].min && sc<=BANDS[k].max) return BANDS[k]; }
+    return null;
+  }
+
+  function render(sc){
+    var band = bandFor(sc);
+    var eyebrow=document.getElementById("res-eyebrow"), scoreEl=document.getElementById("res-score"),
+        titleEl=document.getElementById("res-title"), leadEl=document.getElementById("res-lead"),
+        ruleEl=document.getElementById("res-rule"), bodyEl=document.getElementById("res-body"),
+        ctaEl=document.getElementById("res-cta"), inboxEl=document.getElementById("res-inbox");
+
+    /* graceful default: score missing, non-numeric, or out of range */
+    if (!band){
+      eyebrow.textContent = "We, Women of Light\u2122";
+      scoreEl.style.display="none"; inboxEl.style.display="none"; ruleEl.style.display="none";
+      titleEl.textContent = "Discover Where You Stand In Your Light";
+      leadEl.textContent  = "Fourteen questions, three minutes.";
+      bodyEl.innerHTML = '<p style="text-align:center">Find out where you stand \u2014 Veiled, Awakening, Rising, or Luminous \u2014 and the one step that takes you further.</p>';
+      ctaEl.setAttribute("href","/women#signup");
+      ctaEl.removeAttribute("target"); ctaEl.removeAttribute("rel");
+      ctaEl.innerHTML = "Take the Quiz \u2192";
+      return;
+    }
+
+    eyebrow.textContent = "Where You Stand In Your Light";
+    scoreEl.style.display=""; inboxEl.style.display=""; ruleEl.style.display="";
+    scoreEl.innerHTML  = "You scored <b>"+sc+" out of "+MAXSCORE+"</b>";
+    titleEl.textContent = band.name;
+    leadEl.textContent  = band.lead;
+    bodyEl.innerHTML    = band.body.map(function(p){
+      return (typeof p === "string") ? "<p>"+p+"</p>" : '<p class="veil">'+p.veil+"</p>";
+    }).join("");
+    ctaEl.setAttribute("href","https://wewomenoflight.com");
+    ctaEl.setAttribute("target","_blank"); ctaEl.setAttribute("rel","noopener noreferrer");
+    ctaEl.innerHTML = "Step Into We, Women of Light\u2122 \u2192";
+  }
+
+  var raw = (new URLSearchParams(location.search)).get("score");
+  render(parseInt(raw, 10));
+
+  /* exposed for QA only; harmless in production */
+  window.__wwolRender = render;
+})();
+</script>
+</body>
+</html>
