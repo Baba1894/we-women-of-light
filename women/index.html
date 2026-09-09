@@ -2,59 +2,84 @@
 <title>We, Women of Light&trade; &mdash; Unify Sexuality, Spirituality &amp; Financial Power</title>
 <meta name="description" content="A weekly interactive 3-month initiatory online group program for women. Twelve weeks with Iana Lahi, realigning your life into the Source of your most real, vital and awakened Self.">
 <link rel="canonical" href="https://wewomenoflight.com/women/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Awaken and Embody the Living Wisdom of Creation","description":"An invitation to reclaim the pure feminine and masculine power within you — financially, sexually, spiritually and creatively.","thumbnailUrl":"https://wewomenoflight.com/assets/img/og-landing.jpg","uploadDate":"2026-08-28T12:00:00-07:00","duration":"PT3M50S","embedUrl":"https://customer-c3xamrkrvh2osxey.cloudflarestream.com/348fa47e7fef7467a2da26572dfaa0a8/iframe","publisher":{"@type":"Organization","name":"Spirit Gateways Institute","url":"https://wewomenoflight.com"}}</script><meta property="og:type" content="website"><meta property="og:site_name" content="We, Women of Light"><meta property="og:title" content="Where Are You Now? Take the We, Women of Light Quiz"><meta property="og:description" content="Fourteen questions, three minutes. Find out where you stand — Veiled, Awakening, Rising, or Luminous."><meta property="og:image" content="https://wewomenoflight.com/assets/img/og-landing.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://wewomenoflight.com/women/"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/assets/img/favicon/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32.png"><link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
-:root{--ink:#1d1a15;--parch:#f7f2e8;--parch-2:#efe7d6;--panel:#17130d;--gold:#b0842b;--gold-bright:#fecb3e;--muted:#6b6357;--line:rgba(29,26,21,.12);--wrap:1140px}
+:root{
+  --ink:#1d1a15; --white:#fdfdfd; --gold:#b0842b; --gold-bright:#fecb3e;
+  --muted:#6b6357; --line:rgba(29,26,21,.14); --wrap:1140px;
+  --band:linear-gradient(180deg,#011d34 0%,#043f68 58%,#0a5f92 100%);  /* section 2 */
+  --band-foot:radial-gradient(90% 66% at 50% 104%,rgba(254,203,62,.30) 0%,rgba(254,203,62,0) 62%),linear-gradient(180deg,#011d34 0%,#054b76 100%); /* footer — gold rise, fixed */
+  --band-text:#f3efe6;     /* text on band */
+  --band-head:#fecb3e;     /* headings on band */
+  --band-rule:rgba(255,255,255,.22);
+}
 *{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;background:var(--parch);color:var(--ink);font-family:Raleway,-apple-system,Segoe UI,Roboto,sans-serif;font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:clip}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px} a{color:inherit} img{max-width:100%;display:block}
+body{margin:0;background:var(--white);color:var(--ink);font-family:Raleway,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:clip}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+a{color:inherit} img{max-width:100%;display:block}
 .kicker{font-family:Cinzel;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:20px;color:var(--gold);margin:0 0 18px}
-.site{position:sticky;top:0;z-index:20;background:rgba(247,242,232,.88);backdrop-filter:saturate(1.1) blur(8px);border-bottom:1px solid var(--line)}
+
+/* ---------- HEADER ---------- */
+.site{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
 .site .bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 44px 14px 68px}
 .brand{display:flex;align-items:center;gap:18px;text-decoration:none}
 .brand img{height:76px;width:auto}
-.brand .wm{font-family:Cinzel;font-weight:500;letter-spacing:.03em;font-size:38px;line-height:1.05;color:var(--ink)}
-.brand .wm .w1{white-space:nowrap}
+.brand .wm{font-family:Cinzel;font-weight:500;letter-spacing:.03em;font-size:38px;line-height:1.05}
 .brand .wm .mbr{display:none}
 .btn{font-family:Raleway;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:12px;border-radius:2px;padding:12px 22px;text-decoration:none;display:inline-block;transition:.2s;cursor:pointer;border:1.5px solid transparent}
 .btn-solid{background:var(--gold);color:#fff}.btn-solid:hover{background:#96701f}
 .btn-ghost{border-color:var(--gold);color:var(--ink)}.btn-ghost:hover{background:var(--gold);color:#fff}
-.site .btn{white-space:nowrap}
-.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;border-bottom:1px solid var(--line)}
-/* grid items default to min-width:auto and refuse to shrink below their widest
-   unbreakable line. Without this, a long forced line in the h1 widens the column
-   and pushes the whole page past the viewport. */
+
+/* ---------- HERO ---------- */
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;background:var(--white);border-bottom:1px solid var(--line)}
 .hero>*{min-width:0}
-.hero .copy{padding:64px 14px 64px 68px;align-self:center;max-width:760px;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero .copy{padding:64px 10px 64px 54px;max-width:820px}
 .hero h1{font-family:Cinzel;font-weight:500;line-height:1.12;letter-spacing:.015em;font-size:clamp(30px,3.1vw,42px);margin:0 0 22px}
-.hero .lead{font-size:16px;line-height:1.7;color:#3a352c;margin:0 0 18px;max-width:530px}
+.hero .lead{font-size:16px;line-height:1.7;color:#3a352c;margin:0 0 18px;max-width:560px;text-wrap:pretty}
 .hero .tag{font-family:Cinzel;font-weight:400;font-size:clamp(17px,2.2vw,21px);opacity:.9;margin:0 0 30px}
-.hero .figure{background:var(--panel);position:relative;aspect-ratio:1190/1568;overflow:hidden;align-self:stretch}
-.hero .figure picture{position:absolute;inset:0;display:block}
-.hero .figure img{width:100%;height:100%;object-fit:cover;object-position:50% 42%}
 .hero h3.ready{font-family:Cinzel;font-weight:500;font-size:clamp(18px,2.3vw,22px);letter-spacing:.02em;color:var(--gold);margin:26px 0 12px}
-.hero ul.ready{list-style:none;margin:0 0 26px;padding:0;max-width:530px}
-.hero ul.ready li{position:relative;padding-left:26px;margin:0 0 9px;font-size:15.5px;line-height:1.6;color:#3a352c}
+.hero ul.ready{list-style:none;margin:0 0 26px;padding:0;max-width:none}
+.hero ul.ready li{position:relative;padding-left:24px;margin:0 0 9px;font-size:15.5px;line-height:1.6;color:#3a352c;text-wrap:pretty}
 .hero ul.ready li:before{content:"";position:absolute;left:4px;top:.72em;width:7px;height:7px;border:1.5px solid var(--gold);transform:rotate(45deg)}
-@media (max-width:1180px){.dbr{display:none}}
-@media (min-width:901px) and (max-width:1140px){.hero .figure{align-self:center}.hero .figure img{object-fit:contain}}
-@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.hero .copy{animation:none}}
-.promise{background:var(--parch-2);border-bottom:1px solid var(--line);padding:62px 0}
+/* the graphic: white panel, centred both axes, square never cropped */
+.hero .figure{background:var(--white);display:grid;place-items:center;padding:56px 22px;align-self:stretch}
+.hero .figure .fig{display:block;width:100%;max-width:900px}
+.hero .figure img{display:block;width:100%;max-width:900px;height:auto}
+
+/* ---------- SECTION 2 : BAND ---------- */
+.promise{background:var(--band);color:var(--band-text);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:76px 0}
 .promise .inner{max-width:860px;margin:0 auto;text-align:center}
-.promise h2{font-family:Cinzel;font-weight:500;letter-spacing:.02em;line-height:1.32;font-size:clamp(21px,2.7vw,29px);margin:0 0 22px;color:var(--ink)}
-.promise p{font-size:16.5px;line-height:1.74;color:#3a352c;margin:0 auto 16px;max-width:62ch}
-.promise p.orig{max-width:none;font-family:Cinzel;font-weight:400;font-size:clamp(16px,2vw,20px);letter-spacing:.04em;color:var(--gold);margin:26px auto 0}
-.video-sec{padding:78px 0 74px;text-align:center}
+.promise h2{font-family:Cinzel;font-weight:500;letter-spacing:.02em;line-height:1.32;font-size:clamp(21px,2.7vw,29px);margin:0 0 22px;color:var(--band-head)}
+.promise p{font-size:16.5px;line-height:1.74;margin:0 auto 16px;max-width:62ch;color:var(--band-text)}
+.promise p.orig{max-width:none;font-family:Cinzel;font-weight:400;font-size:clamp(16px,2vw,20px);letter-spacing:.04em;color:var(--band-head);margin:26px auto 0}
+
+/* ---------- SECTION 3 : VIDEO ---------- */
+.video-sec{background:var(--white);padding:78px 0 74px;text-align:center}
 .video-sec h2{font-family:Cinzel;font-weight:500;letter-spacing:.02em;line-height:1.24;font-size:clamp(24px,3.4vw,37px);margin:0 auto 22px;color:var(--gold)}
 .video-sec p.vlead{font-size:16.5px;line-height:1.74;color:#3a352c;max-width:60ch;margin:0 auto 32px}
 .wwol-video{max-width:860px;margin:0 auto;border:1px solid var(--gold);padding:3px}
 .wwol-video__frame{position:relative;padding-top:52.734375%;background:#000;overflow:hidden}
 .wwol-video__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video-sec p.vafter{font-size:16px;line-height:1.76;color:#3a352c;max-width:66ch;margin:34px auto 0}
-.video-sec .join{font-family:Cinzel;font-weight:400;letter-spacing:.22em;text-transform:uppercase;font-size:27px;color:var(--gold);margin:36px 0 0}.video-sec .join a{color:inherit;text-decoration:none;transition:color .2s}.video-sec .join a:hover{color:#96701f}
-.signup{background:var(--parch-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:76px 0 49px}
+.video-sec .join{font-family:Cinzel;font-weight:400;letter-spacing:.22em;text-transform:uppercase;font-size:27px;color:var(--gold);margin:36px 0 0}
+.video-sec .join a{text-decoration:none}
+
+/* ---------- SECTION 4 : IANA QUOTE (NEW) ---------- */
+.quote-sec{position:relative;aspect-ratio:4016/2259;background:#04243d;overflow:hidden}
+.quote-sec>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.quote-sec .qwrap{position:absolute;inset:0;z-index:2;max-width:var(--wrap);margin:0 auto;padding:64px 28px;width:100%;display:grid;align-items:center}
+/* text sits on whichever side Iana is NOT */
+.quote-sec .qwrap{grid-template-columns:minmax(0,52%) 1fr}
+.quote-sec .qbox{align-self:center;transform:translateX(-50px)}
+.quote-sec blockquote{margin:0;text-align:center;font-family:Cinzel;font-weight:400;font-size:clamp(19px,2.05vw,26px);line-height:1.5;color:#fff;text-shadow:0 1px 3px rgba(0,18,38,.85),0 2px 26px rgba(0,18,38,.7)}
+.quote-sec .qlead{display:block;font-size:clamp(18px,2.55vw,33px);line-height:1.2;letter-spacing:.015em;color:var(--gold-bright);margin:0 0 22px;white-space:nowrap;text-shadow:0 1px 3px rgba(0,18,38,.9),0 2px 26px rgba(0,18,38,.75)}
+.quote-sec cite{display:block;text-align:center;margin-top:22px;font-family:Raleway;font-weight:600;font-style:normal;letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--gold-bright);text-shadow:0 2px 14px rgba(0,20,40,.8)}
+
+/* ---------- SECTION 5 : QUIZ ---------- */
+.signup{background:var(--white);border-top:1px solid var(--line);padding:76px 0 60px}
 .signup .inner{max-width:640px;margin:0 auto;text-align:center}
 .signup h2{font-family:Cinzel;font-weight:500;font-size:clamp(28px,3.6vw,40px);letter-spacing:.02em;margin:0 0 12px}
-.signup p.sub{color:#4a4438;margin:0 auto 28px;max-width:46ch}
+
+
+/* ---------- FORMS + QUIZ ENGINE ---------- */
 form.capture{display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:left}
 form.capture .full{grid-column:1/-1}
 label.fld{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 6px}
@@ -65,18 +90,10 @@ form.capture input:focus{outline:2px solid var(--gold);outline-offset:1px;border
 form.capture .submit{grid-column:1/-1;margin-top:6px}
 form.capture button{width:100%;border:0;font-size:13px;padding:15px}
 .consent-note{font-size:11.5px;color:var(--muted);margin:14px 0 0;text-align:center}
-footer{background:var(--ink);color:#cabfa9;padding:48px 0 40px;font-size:13px}
-footer .top{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
-.hp-badge{font-family:Cinzel;font-weight:500;letter-spacing:.22em;text-transform:uppercase;font-size:11.5px;color:var(--gold-bright);border:1px solid rgba(254,203,62,.4);border-radius:2px;padding:7px 15px;margin:0 0 4px}
-.social{display:flex;gap:18px}
-.social a{width:38px;height:38px;border:1px solid rgba(202,191,169,.35);border-radius:50%;display:grid;place-items:center;transition:.2s}
-.social a:hover{border-color:var(--gold-bright);background:rgba(254,203,62,.08)}
-.social svg{width:17px;height:17px;fill:#cabfa9}.social a:hover svg{fill:var(--gold-bright)}
-.legal{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.legal a{color:#cabfa9;text-decoration:none;border-bottom:1px solid transparent}
-.legal a:hover{border-color:var(--gold-bright);color:#fff}
-.copy-line{color:#8a806b;margin:20px 0 0;text-align:center;font-size:12.5px}
-
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.thanks{text-align:center;padding:18px 0 4px}
+.thanks p{font-family:Cinzel;font-weight:400;font-size:22px;letter-spacing:.06em;color:var(--gold);margin:0}
+form.capture.is-busy{opacity:.55;pointer-events:none}
 /* ---- WWOL QUIZ ---- */
 .wwol-quiz__subhead{font-family:Raleway;font-weight:300;font-size:17px;line-height:1.72;color:#4a4438;text-align:center;max-width:38rem;margin:0 auto}
 .wwol-quiz__skip{text-align:center;margin-top:30px;margin-bottom:24px}
@@ -122,47 +139,94 @@ footer .top{display:flex;flex-direction:column;align-items:center;gap:16px;text-
 .thanks{text-align:center;padding:18px 0 4px}
 .thanks p{font-family:Cinzel;font-weight:400;font-size:22px;letter-spacing:.06em;color:var(--gold);margin:0}
 form.capture.is-busy{opacity:.55;pointer-events:none}
+/* ---------- FOOTER ---------- */
+footer{background:var(--band-foot);color:var(--band-text);padding:48px 0 40px;font-size:13px;border-top:1px solid var(--line)}
+footer .top{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.hp-badge{font-family:Cinzel;font-weight:500;letter-spacing:.22em;text-transform:uppercase;font-size:11.5px;color:var(--band-head);border:1px solid var(--band-rule);border-radius:2px;padding:7px 15px}
+.social{display:flex;gap:18px}
+.social a{width:38px;height:38px;border:1px solid var(--band-rule);border-radius:50%;display:grid;place-items:center}
+.social svg{width:17px;height:17px;fill:var(--band-text)}
+.legal{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.legal a{text-decoration:none;border-bottom:1px solid transparent}
+.legal a:hover{border-color:var(--band-head)}
+.copy-line{margin:20px 0 0;text-align:center;font-size:12.5px;opacity:.72}
+
 @media (max-width:900px){
-.hero{grid-template-columns:1fr}.hero .copy{padding:52px 28px 44px;order:2;max-width:none}.hero .figure{order:1;aspect-ratio:auto;height:auto;min-height:0;background:transparent;align-self:start;position:static;overflow:visible}.hero .figure picture{position:static;inset:auto;display:block}.hero .figure img{position:static;width:100%;height:auto;object-fit:contain;object-position:center}
-.hero ul.ready,.hero .lead{max-width:none}
-.site .bar{padding:12px 20px}.brand{gap:12px}.brand img{height:46px}
-.brand .wm{font-size:19px;line-height:1.15}.brand .wm .mbr{display:inline}
-.site .btn{padding:9px 13px;font-size:10.5px}
-.kicker{font-size:16px}.video-sec .join{font-size:clamp(17px,5.4vw,21.6px);margin-left:-16px;margin-right:-16px}form.capture{grid-template-columns:1fr}.quiz-closer{font-size:17px;letter-spacing:.16em;margin-top:24px;line-height:1.55}.wwol-q__text{font-size:18px}.wwol-ans__text{font-size:15px}.wwol-quiz__subhead{font-size:15px}.brk,.mbrk{display:block;height:0}.dbrk{display:none}
-.promise{padding:48px 0}.promise h2{font-size:clamp(19px,5.4vw,24px)}}
-@media (max-width:700px){
-.video-sec h2{font-size:clamp(19px,6vw,24px);margin-left:-16px;margin-right:-16px}
-.quiz-closer{font-size:clamp(13px,4.25vw,17px);margin-left:-16px;margin-right:-16px}
+  .hero{grid-template-columns:1fr}
+  .hero .copy{padding:52px 28px 44px;order:2;max-width:none}
+  .hero .figure{order:1;padding:28px 22px 8px;align-self:start}
+  .hero ul.ready,.hero .lead{max-width:none}
+  .site .bar{padding:12px 20px}.brand{gap:12px}.brand img{height:46px}
+  .brand .wm{font-size:19px;line-height:1.15}.brand .wm .mbr{display:inline}
+  .site .btn{padding:9px 13px;font-size:10.5px}
+  .kicker{font-size:16px}.video-sec .join{font-size:19px}
+  .quiz-closer{font-size:17px;letter-spacing:.16em}
+  .promise{padding:48px 0}.promise h2{font-size:clamp(19px,5.4vw,24px)}
+  .kicker{font-size:16px}.video-sec .join{font-size:clamp(17px,5.4vw,21.6px);margin-left:-16px;margin-right:-16px}form.capture{grid-template-columns:1fr}.quiz-closer{font-size:17px;letter-spacing:.16em;margin-top:24px;line-height:1.55}.wwol-q__text{font-size:18px}.wwol-ans__text{font-size:15px}.wwol-quiz__subhead{font-size:15px}.brk,.mbrk{display:block;height:0}.dbrk{display:none}
+  .quiz-closer{font-size:clamp(13px,4.25vw,17px);margin-left:-16px;margin-right:-16px}
+  .quote-sec{min-height:0}
+  .quote-sec{aspect-ratio:auto;display:block;background:var(--band)}
+  .quote-sec>img{position:static;height:auto}
+  .quote-sec .qwrap,.quote-sec .qwrap,    .quote-sec .qbox{transform:none}
 }
-</style></head><body>
-<header class="site"><div class="bar"><a class="brand" href="/"><img src="/assets/img/brand/logo-institute-480.png" srcset="/assets/img/brand/logo-institute-480.png 1x, /assets/img/brand/logo-institute-800.png 2x" alt="Spirit Gateways Institute" width="76" height="76"><span class="wm"><span class="w1">We, Women</span><br class="mbr"> of Light&trade;</span></a><a class="btn btn-ghost" href="#signup">Get The Details</a></div></header>
-<section class="hero"><div class="copy"><p class="kicker">We, Women of Light&trade;</p><h1>Unify Sexuality, Spirituality &amp; Financial Power</h1>
-<p class="lead">Beloved woman, you are invited to break free from your known and unknown hidden limitations, cellular memories, traumas and inner energetic fears and barriers&mdash;woven through your mind, psyche, and feelings surrounding your soul matrix&mdash;and clear karmic, ancestral, and family energies, so that you can merge with the light that you are and manifest financial, creative, and sexual ONEness.</p>
-<h3 class="ready">Are you ready to:</h3>
-<ul class="ready">
-<li>Mend your inner heart woundings.</li>
-<li>Remember and embody your True Self.</li>
-<li>Birth your true power into your body with love.</li>
-<li>Recalibrate your sexual energies from your true power.</li>
-<li>Rise up through old fears into the light of your True Self.</li>
-<li>Step through your old operating system into the new You.</li>
-<li>End patterns of self-abandonment, betrayal and rejection.</li>
-<li>Embody and create your dreams from the fullness of your BEing.</li>
-<li>Recode your internal operating system&mdash;unify power, pleasure &amp; profit.</li>
-<li>Unlock your authentic life blueprint to fulfill your most cherished aspirations.</li>
-</ul>
-<p class="tag">Experience Direct Connection<br class="dbr"> To Your Infinite Source.</p><a class="btn btn-solid" href="#signup">Get The Details</a></div>
-<div class="figure"><picture><source type="image/webp" srcset="/assets/img/landing/landing-hero-640.webp 640w, /assets/img/landing/landing-hero-960.webp 960w, /assets/img/landing/landing-hero-1190.webp 1190w" sizes="(max-width:900px) 100vw, 48vw"><img src="/assets/img/landing/landing-hero-960.jpg" srcset="/assets/img/landing/landing-hero-640.jpg 640w, /assets/img/landing/landing-hero-960.jpg 960w, /assets/img/landing/landing-hero-1190.jpg 1190w" sizes="(max-width:900px) 100vw, 42vw" alt="Classical figure of the divine feminine holding a globe" loading="eager"></picture></div></section>
+</style></head>
+<body>
+
+
+<header class="site"><div class="bar">
+  <a class="brand" href="#"><img src="/assets/img/brand/logo-institute-480.png" srcset="/assets/img/brand/logo-institute-480.png 1x, /assets/img/brand/logo-institute-800.png 2x" alt="Spirit Gateways Institute" width="76" height="76"><span class="wm"><span>We, Women</span><br class="mbr"> of Light&trade;</span></a>
+  <a class="btn btn-ghost" href="#signup">Get The Details</a>
+</div></header>
+
+<section class="hero">
+  <div class="copy">
+    <p class="kicker">We, Women of Light&trade;</p>
+    <h1>Unify Sexuality, Spirituality &amp; Financial Power</h1>
+    <p class="lead">Beloved woman, you are invited to break free from your known and unknown hidden limitations, cellular memories, traumas and inner energetic fears and barriers&mdash;woven through your mind, psyche, and feelings surrounding your soul matrix&mdash;and clear karmic, ancestral, and family energies, so that you can merge with the light that you are and manifest financial, creative, and sexual ONEness.</p>
+    <h3 class="ready">Are you ready to:</h3>
+    <ul class="ready">
+      <li>Mend your inner heart woundings.</li>
+      <li>Remember and embody your True Self.</li>
+      <li>Birth your true power into your body with love.</li>
+      <li>Recalibrate your sexual energies from your true power.</li>
+      <li>Rise up through old fears into the light of your True Self.</li>
+      <li>Step through your old operating system into the new You.</li>
+      <li>End patterns of self-abandonment, betrayal and rejection.</li>
+      <li>Embody and create your dreams from the fullness of your BEing.</li>
+      <li>Recode your internal operating system&mdash;unify power, pleasure &amp; profit.</li>
+      <li>Unlock your authentic life blueprint to fulfill your most cherished aspirations.</li>
+    </ul>
+    <p class="tag">Experience Direct Connection To Your Infinite Source.</p>
+    <a class="btn btn-solid" href="#signup">Get The Details</a>
+  </div>
+  <div class="figure"><div class="fig">
+    <img src="/assets/img/hero/constellation-1500.webp" srcset="/assets/img/hero/constellation-900.webp 900w, /assets/img/hero/constellation-1240.webp 1240w, /assets/img/hero/constellation-1500.webp 1500w, /assets/img/hero/constellation-1800.webp 1800w" sizes="(max-width:900px) 92vw, 900px" alt="We, Women of Light &mdash; A Woman&rsquo;s Wholeness Constellation" width="2500" height="2728" fetchpriority="high" decoding="async">
+  </div></div>
+</section>
+
 <section class="promise"><div class="wrap"><div class="inner">
-<h2>We, Women Of Light&trade; is a weekly interactive 3-month initiatory online group program for women that realigns your life into the Source of your most real, vital, and awakened Self, so that you can flourish BEing ONE in You.</h2>
-<p>Join me for a powerful twelve-week journey, a sacred weekly gathering of conscious women who are ready to rise into the full expression of who they truly are and make the impact they feel called to make.</p>
-<p class="orig">The Original Way Teachings of Divine Feminine-Masculine Reunion.</p>
+  <h2>We, Women Of Light&trade; is a weekly interactive 3-month initiatory online group program for women that realigns your life into the Source of your most real, vital, and awakened Self, so that you can flourish BEing ONE in You.</h2>
+  <p>Join me for a powerful twelve-week journey, a sacred weekly gathering of conscious women who are ready to rise into the full expression of who they truly are and make the impact they feel called to make.</p>
+  <p class="orig">The Original Way Teachings of Divine Feminine-Masculine Reunion.</p>
 </div></div></section>
-<section class="video-sec"><div class="wrap"><h2>Awaken and Embody<span class="mbrk"> </span>the Living Wisdom<br class="dbrk"> of Creation<span class="brk"> </span>&amp; Cosmic Oneness</h2>
-<p class="vlead">You are invited to reclaim the pure feminine and masculine power within you&mdash;financially, sexually, spiritually, and creatively&mdash;and become joyfully whole.</p>
-<div class="wwol-video"><div class="wwol-video__frame"><iframe src="https://customer-c3xamrkrvh2osxey.cloudflarestream.com/348fa47e7fef7467a2da26572dfaa0a8/iframe?poster=https%3A%2F%2Fcustomer-c3xamrkrvh2osxey.cloudflarestream.com%2F348fa47e7fef7467a2da26572dfaa0a8%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D14s&primaryColor=%23fecb3e" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div></div>
-<p class="vafter">Awaken and Embody the Living Wisdom of Creation, Silence, Regeneration, Illumination, Sexual Union, Cosmic Oneness, Direct Knowing, True Leadership and Financial Freedom, Motherhood, Creative and Spiritual ONEness, Living Breath and Frequency, Conscious Living and Attunement, and the Power of Who You Truly Are into Your Everyday Life.</p>
-<p class="join"><a href="#signup">Discover Where You Stand In Your Light</a></p></div></section>
+
+<section class="video-sec"><div class="wrap">
+  <h2>Awaken and Embody the Living Wisdom of Creation &amp; Cosmic Oneness</h2>
+  <p class="vlead">You are invited to reclaim the pure feminine and masculine power within you&mdash;financially, sexually, spiritually, and creatively&mdash;and become joyfully whole.</p>
+  <div class="wwol-video"><div class="wwol-video__frame">
+    <iframe src="https://customer-c3xamrkrvh2osxey.cloudflarestream.com/348fa47e7fef7467a2da26572dfaa0a8/iframe?poster=https%3A%2F%2Fcustomer-c3xamrkrvh2osxey.cloudflarestream.com%2F348fa47e7fef7467a2da26572dfaa0a8%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D14s&primaryColor=%23fecb3e" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+  </div></div>
+  <p class="vafter">Awaken and Embody the Living Wisdom of Creation, Silence, Regeneration, Illumination, Sexual Union, Cosmic Oneness, Direct Knowing, True Leadership and Financial Freedom, Motherhood, Creative and Spiritual ONEness, Living Breath and Frequency, Conscious Living and Attunement, and the Power of Who You Truly Are into Your Everyday Life.</p>
+  <p class="join"><a href="#signup">Discover Where You Stand In Your Light</a></p>
+</div></section>
+
+<section class="quote-sec">
+  <img src="/assets/img/sales/iana-shoreline-1400.jpg" srcset="/assets/img/sales/iana-shoreline-900.jpg 900w, /assets/img/sales/iana-shoreline-1400.jpg 1400w, /assets/img/sales/iana-shoreline-1900.jpg 1900w, /assets/img/sales/iana-shoreline-2400.jpg 2400w" sizes="100vw" alt="Iana Lahi on the shoreline, arms open to the sea" loading="lazy" decoding="async">
+  <div class="qwrap"><div class="qbox">
+    <blockquote><span class="qlead">You Know This Is Your Time.</span>No more waiting.<br>No more holding back.<br>Your power, your love, your light&mdash;<br>it&rsquo;s all here, ready to rise.</blockquote>
+  </div></div>
+</section>
+
 <section class="signup" id="signup"><div class="wrap"><div class="inner">
 <div id="wwol-quiz-wrap">
 <h2>Where Are You Now?</h2>
@@ -208,7 +272,16 @@ form.capture.is-busy{opacity:.55;pointer-events:none}
 
 <p class="quiz-closer">Merge With The Light<br>That You Already Are.</p>
 </div></div></section>
-<footer><div class="wrap"><div class="top"><p class="hp-badge">Human Powered &mdash; No AI</p><nav class="social" aria-label="Social media"><a href="https://www.instagram.com/ianalahi/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.17.4.36 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.17-1 .36-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1 0 18.6 12 6.6 6.6 0 0 0 12 5.4zm0 10.9A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3zm6.8-11.2a1.54 1.54 0 1 1-1.54-1.54 1.54 1.54 0 0 1 1.54 1.54z"/></svg></a><a href="https://www.facebook.com/ianalahi" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6c-.3 0-1.3-.13-2.46-.13-2.44 0-4.11 1.49-4.11 4.22V9.9H7.4V13h2.73v8z"/></svg></a><a href="https://www.youtube.com/@ianalahispiritgateways" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M23 7.5a3 3 0 0 0-2.1-2.1C19 4.9 12 4.9 12 4.9s-7 0-8.9.5A3 3 0 0 0 1 7.5 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.5 31 31 0 0 0-.5-4.5zM9.8 15.3V8.7l5.7 3.3z"/></svg></a><a href="https://linkedin.com/in/ianalahi" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.3 8.5h3.3V21H3.3zM9.5 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.3 0 3.9 2.2 3.9 5V21h-3.3v-5.7c0-1.36-.02-3.1-1.9-3.1s-2.2 1.48-2.2 3v5.8H9.5z"/></svg></a></nav><div class="legal"><a href="https://www.ianalahi.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a><span aria-hidden="true">·</span><a href="https://www.ianalahi.com/terms" target="_blank" rel="noopener noreferrer">Terms</a><span aria-hidden="true">·</span><a href="https://www.ianalahi.com/disclaimer" target="_blank" rel="noopener noreferrer">Disclaimer</a></div></div><p class="copy-line">&copy; 2001&ndash;2026 Iana Lahi / Spirit Gateways&reg; Institute. All worldwide rights reserved.</p></div></footer>
+<footer><div class="wrap"><div class="top">
+  <p class="hp-badge">Human Powered &mdash; No AI</p>
+  <nav class="social" aria-label="Social media">
+    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.17.4.36 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.17-1 .36-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1 0 18.6 12 6.6 6.6 0 0 0 12 5.4zm0 10.9A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3zm6.8-11.2a1.54 1.54 0 1 1-1.54-1.54 1.54 1.54 0 0 1 1.54 1.54z"/></svg></a>
+    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6c-.3 0-1.3-.13-2.46-.13-2.44 0-4.11 1.49-4.11 4.22V9.9H7.4V13h2.73v8z"/></svg></a>
+    <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.5a3 3 0 0 0-2.1-2.1C19 4.9 12 4.9 12 4.9s-7 0-8.9.5A3 3 0 0 0 1 7.5 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.5 31 31 0 0 0-.5-4.5zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.3 8.5h3.3V21H3.3zM9.5 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.3 0 3.9 2.2 3.9 5V21h-3.3v-5.7c0-1.36-.02-3.1-1.9-3.1s-2.2 1.48-2.2 3v5.8H9.5z"/></svg></a>
+  </nav>
+  <div class="legal"><a href="#">Privacy</a><span>·</span><a href="#">Terms</a><span>·</span><a href="#">Disclaimer</a></div>
+</div><p class="copy-line">&copy; 2001&ndash;2026 Iana Lahi / Spirit Gateways&reg; Institute. All worldwide rights reserved.</p></div></footer>
 <script>
 /* WWOL quiz — /women. Content verbatim from WWOL COPY QUIZ v1.1 (2026.08.27).
 
