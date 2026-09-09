@@ -159,22 +159,25 @@ footer .top{display:flex;flex-direction:column;align-items:center;gap:16px;text-
   .site .bar{padding:12px 20px}.brand{gap:12px}.brand img{height:46px}
   .brand .wm{font-size:19px;line-height:1.15}.brand .wm .mbr{display:inline}
   .site .btn{padding:9px 13px;font-size:10.5px}
-  .kicker{font-size:16px}.video-sec .join{font-size:19px}
-  .quiz-closer{font-size:17px;letter-spacing:.16em}
   .promise{padding:48px 0}.promise h2{font-size:clamp(19px,5.4vw,24px)}
   .kicker{font-size:16px}.video-sec .join{font-size:clamp(17px,5.4vw,21.6px);margin-left:-16px;margin-right:-16px}form.capture{grid-template-columns:1fr}.quiz-closer{font-size:17px;letter-spacing:.16em;margin-top:24px;line-height:1.55}.wwol-q__text{font-size:18px}.wwol-ans__text{font-size:15px}.wwol-quiz__subhead{font-size:15px}.brk,.mbrk{display:block;height:0}.dbrk{display:none}
   .quiz-closer{font-size:clamp(13px,4.25vw,17px);margin-left:-16px;margin-right:-16px}
-  .quote-sec{min-height:0}
-  .quote-sec{aspect-ratio:auto;display:block;background:var(--band)}
-  .quote-sec>img{position:static;height:auto}
-  .quote-sec .qwrap,.quote-sec .qwrap,    .quote-sec .qbox{transform:none}
+  /* mobile: the copy gets its own blue band directly above the photograph,
+     rather than sitting over it. flex order puts qwrap first even though the
+     image comes first in the DOM. */
+  .quote-sec{aspect-ratio:auto;display:flex;flex-direction:column;background:var(--white)}
+  .quote-sec>img{order:2;position:static;height:auto}
+  .quote-sec .qwrap{order:1;position:static;grid-template-columns:1fr;padding:46px 26px 44px;background:var(--band)}
+  .quote-sec .qbox{transform:none}
+  .quote-sec blockquote,.quote-sec .qlead{text-shadow:none}
+  .quote-sec .qlead{margin-bottom:18px}
 }
 </style></head>
 <body>
 
 
 <header class="site"><div class="bar">
-  <a class="brand" href="#"><img src="/assets/img/brand/logo-institute-480.png" srcset="/assets/img/brand/logo-institute-480.png 1x, /assets/img/brand/logo-institute-800.png 2x" alt="Spirit Gateways Institute" width="76" height="76"><span class="wm"><span>We, Women</span><br class="mbr"> of Light&trade;</span></a>
+  <a class="brand" href="/"><img src="/assets/img/brand/logo-institute-480.png" srcset="/assets/img/brand/logo-institute-480.png 1x, /assets/img/brand/logo-institute-800.png 2x" alt="Spirit Gateways Institute" width="76" height="76"><span class="wm"><span>We, Women</span><br class="mbr"> of Light&trade;</span></a>
   <a class="btn btn-ghost" href="#signup">Get The Details</a>
 </div></header>
 
