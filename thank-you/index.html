@@ -1,0 +1,1842 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Your Place Is Held &mdash; We, Women of Light&trade;</title><meta name="description" content="Thank you for enrolling in We, Women of Light."><meta name="robots" content="noindex,nofollow"><link rel="canonical" href="https://wewomenoflight.com/thank-you/"><meta property="og:type" content="website"><meta property="og:site_name" content="We, Women of Light"><meta property="og:title" content="Your Place Is Held — We, Women of Light™"><meta property="og:description" content="Thank you for enrolling in We, Women of Light."><meta property="og:image" content="https://wewomenoflight.com/assets/img/og-landing.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://wewomenoflight.com/thank-you/"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/assets/img/favicon/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32.png"><link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"><style>/* ═══════════════════════════════════════════════════════════════
+   NEW MASCULINE EMERGING — v4  (layout spec v3.0)
+   Every word sits on cream. Two exceptions only: the hero, and the
+   archer testimonial section, which keeps its overlay untouched.
+     .duo   50/50 text panel + photo panel, alternating side to side
+     .solo  full-width centred text
+     .beat  the Iana quote, the one dark drop in the page
+   Photo panels crop to fill their half and match the height of the
+   text panel beside them.
+   ═══════════════════════════════════════════════════════════════ */
+
+:root{
+  --ink:#1d1a15; --parch:#f7f2e8; --parch-2:#efe7d6; --panel:#17130d;
+  --gold:#b0842b; --gold-bright:#fecb3e; --muted:#6b6357;
+  --line:rgba(29,26,21,.13); --line-g:rgba(254,203,62,.32);
+  --body:#3a352c; --wrap:1140px;
+  --pad-y:clamp(58px,6.5vw,96px); --pad-x:clamp(26px,4.4vw,74px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--parch);color:var(--ink);
+  font-family:Raleway,-apple-system,Segoe UI,Roboto,sans-serif;
+  font-weight:400;font-size:17px;line-height:1.74;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+button:focus:not(:focus-visible){outline:none}
+
+h2{font-family:Cinzel;font-weight:500;color:var(--gold);letter-spacing:.02em;
+  font-size:clamp(25px,3.1vw,40px);line-height:1.17;margin:0}
+h3{font-family:Cinzel;font-weight:500;letter-spacing:.03em;
+  font-size:clamp(17px,1.9vw,21px);line-height:1.32;color:var(--gold);margin:0 0 10px}
+p{margin:0 0 1.05em;color:var(--body)}
+b{color:var(--ink);font-weight:600}
+.crule{width:52px;height:2px;background:var(--gold);border:0;margin:22px 0 26px}
+.solo .crule,.beat .crule{margin-left:auto;margin-right:auto}
+.lead-in{color:var(--muted);font-size:clamp(16.5px,1.75vw,18px);margin:0 0 28px}
+.cream-close{font-family:Cinzel;font-weight:400;color:var(--ink);
+  font-size:clamp(17px,2vw,21px);line-height:1.5;margin:34px 0 0}
+.solo .cream-close{max-width:56ch;margin-left:auto;margin-right:auto}
+.em{display:block;font-weight:600;color:var(--ink);margin:14px 0 0}
+
+.btn{font-family:Raleway;font-weight:600;letter-spacing:.11em;text-transform:uppercase;
+  font-size:12px;border-radius:2px;padding:15px 30px;text-decoration:none;
+  display:inline-block;transition:.2s;border:1.5px solid transparent}
+.btn-solid{background:var(--gold);color:#fff}.btn-solid:hover{background:#96701f}
+.btn-ghost{border-color:var(--gold);color:var(--ink)}
+.btn-ghost:hover{background:var(--gold);color:#fff}
+
+/* ── header ── */
+.site{position:sticky;top:0;z-index:40;background:rgba(247,242,232,.94);
+  backdrop-filter:saturate(1.1) blur(9px);border-bottom:1px solid var(--line)}
+.site .bar{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  padding:11px clamp(16px,3.5vw,44px)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{height:54px;width:auto}
+.brand .wm{font-family:Cinzel;font-weight:500;font-size:clamp(15px,1.8vw,24px);
+  line-height:1.05;letter-spacing:.03em;color:var(--ink)}
+.site .btn{white-space:nowrap;padding:11px 18px;font-size:11px}
+
+/* ═══════════ HERO — the only place text sits on a photograph ═══════════ */
+.s-hero{position:relative;min-height:92vh;display:grid;align-items:center;
+  overflow:hidden;background:var(--panel)}
+.s-hero__media,.s-hero__media img{position:absolute;inset:0;width:100%;height:100%}
+.s-hero__media img{object-fit:cover;object-position:center 28%}
+.s-hero__scrim{position:absolute;inset:0;background:linear-gradient(180deg,
+  rgba(9,7,4,.44),rgba(9,7,4,.16) 42%,rgba(9,7,4,.76))}
+.s-hero__inner{position:relative;text-align:center;color:#fff;max-width:1000px;
+  margin:0 auto;padding:130px 28px}
+.s-hero .kicker{font-family:Cinzel;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;font-size:14px;color:var(--gold-bright);margin:0 0 20px}
+.s-hero h1{font-family:Cinzel;font-weight:500;font-size:clamp(34px,5.6vw,70px);
+  line-height:1.06;letter-spacing:.012em;margin:0 0 26px;color:#fff;
+  text-shadow:0 2px 36px rgba(0,0,0,.6)}
+.s-hero__sub{font-family:Cinzel;font-weight:400;font-size:clamp(17px,2.1vw,23px);
+  line-height:1.5;margin:0 auto 16px;max-width:34ch;color:#f2ece0;
+  text-shadow:0 2px 22px rgba(0,0,0,.7)}
+.s-hero__tag{font-family:Cinzel;font-weight:400;font-size:clamp(16px,1.9vw,21px);
+  color:var(--gold-bright);letter-spacing:.03em;margin:0 0 14px;
+  text-shadow:0 2px 20px rgba(0,0,0,.75)}
+.s-hero__with{font-family:Raleway;font-weight:500;letter-spacing:.1em;
+  text-transform:uppercase;font-size:12px;color:#cec4af;margin:0 0 36px;line-height:1.9}
+
+/* ═══════════ DUO — text panel + photo panel ═══════════ */
+.duo{display:grid;grid-template-columns:1fr 1fr;background:var(--parch);
+  border-top:1px solid var(--line)}
+.duo.tint{background:var(--parch-2)}
+.duo>.txt{padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;
+  justify-content:center}
+.duo>.txt>.inner{max-width:54ch}
+.duo>.pic{position:relative;background:var(--panel);min-height:340px}
+.duo>.pic img{position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center}
+.duo.rev>.pic{order:1}
+.duo.rev>.txt{order:2}
+
+/* ═══════════ SOLO — full-width centred text ═══════════ */
+.solo{background:var(--parch);padding:var(--pad-y) 0;border-top:1px solid var(--line)}
+.solo.tint{background:var(--parch-2)}
+.solo>.inner{max-width:820px;margin:0 auto;padding:0 28px;text-align:center}
+.solo.wide>.inner{max-width:1000px}
+.solo .lead-in{max-width:60ch;margin-left:auto;margin-right:auto}
+
+/* ── shared content blocks ── */
+.plist,.s-list{list-style:none;margin:24px 0 0;padding:0;text-align:left}
+.solo .plist,.solo .s-list{max-width:660px;margin-left:auto;margin-right:auto}
+.plist li,.s-list li{position:relative;padding:12px 0 12px 27px;
+  border-bottom:1px solid var(--line);font-size:16.5px;color:var(--body)}
+.plist li:last-child,.s-list li:last-child{border-bottom:0}
+.plist li:before,.s-list li:before{content:"";position:absolute;left:2px;top:20px;
+  width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+
+.cream-bullets{list-style:none;margin:24px 0 0;padding:0;columns:2;column-gap:44px;
+  text-align:left;max-width:820px;margin-left:auto;margin-right:auto}
+.cream-bullets li{position:relative;padding:8px 0 8px 26px;font-size:16.5px;
+  color:var(--body);break-inside:avoid}
+.cream-bullets li:before{content:"";position:absolute;left:2px;top:17px;width:7px;
+  height:7px;background:var(--gold);transform:rotate(45deg)}
+@media (max-width:820px){.cream-bullets{columns:1}}
+
+.pemotions{display:flex;flex-direction:column;gap:4px;margin:22px 0}
+.solo .pemotions{align-items:center}
+.pemotions span{font-family:Raleway;font-size:clamp(15.5px,1.8vw,18px);
+  color:var(--body)}
+
+.outcomes{margin:24px 0 0;text-align:left}
+.solo .outcomes{max-width:720px;margin-left:auto;margin-right:auto}
+.outcomes .o{padding:22px 0;border-top:1px solid var(--line)}
+.outcomes .o:first-child{border-top:0;padding-top:4px}
+.outcomes .o p{font-size:16.5px;line-height:1.72;margin:0 0 11px}
+.outcomes .o p:last-child{margin-bottom:0}
+
+.pweeks{list-style:none;margin:24px 0 0;padding:0;text-align:left}
+.solo .pweeks{max-width:680px;margin-left:auto;margin-right:auto}
+.pweeks li{padding:11px 0;border-bottom:1px solid var(--line);font-size:16.5px;
+  color:var(--body)}
+.pweeks li:last-child{border-bottom:0}
+.pweeks .wk{font-family:Cinzel;font-weight:600;font-size:12px;letter-spacing:.06em;
+  color:var(--gold);display:inline-block;min-width:92px;margin-right:12px}
+
+.from-to{list-style:none;margin:24px 0 0;padding:0;text-align:left}
+.solo .from-to{max-width:860px;margin-left:auto;margin-right:auto}
+.from-to li{padding:15px 0;border-bottom:1px solid var(--line);font-size:16.5px;
+  line-height:1.58;color:var(--body)}
+.from-to li:last-child{border-bottom:0}
+.from-to .f{color:var(--muted)}
+.from-to .arw{color:var(--gold);font-weight:600;margin:0 10px}
+.from-to .t{color:var(--ink);font-weight:500}
+
+.filter-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,56px);
+  max-width:920px;margin:26px auto 0;text-align:left}
+.filter-cols ul{list-style:none;margin:0;padding:0}
+.filter-cols li{position:relative;padding:11px 0 11px 26px;
+  border-bottom:1px solid var(--line);font-size:16px;color:var(--body)}
+.filter-cols li:last-child{border-bottom:0}
+.filter-cols li:before{content:"";position:absolute;left:2px;top:19px;width:7px;
+  height:7px;background:var(--gold);transform:rotate(45deg)}
+@media (max-width:820px){.filter-cols{grid-template-columns:1fr;gap:26px}}
+
+.cols{column-count:2;column-gap:46px;text-align:left;max-width:860px;margin:24px auto 0}
+.cols p{font-size:16.5px;line-height:1.74;break-inside:avoid}
+@media (max-width:820px){.cols{column-count:1}}
+
+.pq{max-width:600px;margin:32px auto 0;padding:22px 0 0;border-top:1px solid var(--line)}
+.duo .pq{margin-left:0}
+.pq blockquote{margin:0 0 10px;font-style:italic;color:var(--body);
+  font-size:clamp(16px,1.8vw,18.5px);line-height:1.64}
+.pq figcaption{font-family:Cinzel;font-weight:500;font-size:12.5px;
+  letter-spacing:.07em;color:var(--gold)}
+
+/* ═══════════ THE BEAT ═══════════ */
+.beat{background:var(--panel);padding:clamp(64px,10vh,120px) 0;
+  border-top:1px solid var(--line-g);border-bottom:1px solid var(--line-g)}
+.beat blockquote{max-width:960px;margin:0 auto;padding:0 30px;font-family:Cinzel;
+  font-weight:400;color:var(--gold-bright);font-size:clamp(21px,3vw,36px);
+  line-height:1.36;text-align:center}
+.beat figcaption{text-align:center;font-family:Cinzel;font-weight:500;font-size:13px;
+  letter-spacing:.22em;text-transform:uppercase;color:#a2947a;margin:30px 0 0}
+
+/* ═══════════ ARCHER — the one overlay section, unchanged ═══════════ */
+.psec{position:relative;display:grid;overflow:hidden;background:var(--panel)}
+.psec>.media{grid-area:1/1;position:relative;width:100%}
+.psec>.media img{width:100%;height:100%;object-fit:cover;object-position:center}
+.psec>.scrim{grid-area:1/1;z-index:1;background:linear-gradient(180deg,
+  rgba(6,5,3,.34),rgba(6,5,3,.22) 40%,rgba(6,5,3,.42))}
+.psec>.overlay{grid-area:1/1;position:relative;z-index:2;display:flex;
+  align-items:center;justify-content:center;padding:9vh 7vw}
+.plate-box{max-width:840px;margin:0 auto;text-align:center;
+  background:rgba(11,9,5,.78);border:1px solid var(--line-g);border-radius:4px;
+  padding:clamp(30px,3.6vw,52px) clamp(24px,3.4vw,54px);
+  box-shadow:0 24px 70px rgba(0,0,0,.46);backdrop-filter:blur(3px) saturate(1.05)}
+.plate-box h2{color:var(--gold-bright);text-shadow:0 2px 22px rgba(0,0,0,.6)}
+.plate-box .crule{background:var(--gold-bright);margin-left:auto;margin-right:auto}
+.pquotes{max-width:700px;margin:0 auto;text-align:left}
+.pquote{margin:0 0 26px;padding:0 0 24px;border-bottom:1px solid rgba(254,203,62,.2)}
+.pquote:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.pquote blockquote{margin:0 0 11px;font-style:italic;color:#f1ebdf;
+  font-size:clamp(15.5px,1.7vw,18px);line-height:1.64}
+.pquote figcaption{font-family:Cinzel;font-weight:500;font-size:12.5px;
+  letter-spacing:.05em;color:var(--gold-bright)}
+.pquote.ph blockquote{color:#a99a7e;font-style:normal}
+.plate-lbl{font-family:Cinzel;font-weight:500;font-size:12.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--gold-bright);margin:34px 0 20px;padding-top:22px;
+  border-top:1px solid rgba(254,203,62,.2);text-align:center}
+
+/* ═══════════ VIDEO ═══════════ */
+.cream-video{max-width:920px;margin:8px auto 0;border:2px solid var(--gold);padding:4px;
+  background:#000}
+.cream-video__frame{position:relative;padding-top:56.25%;background:#000;overflow:hidden}
+.cream-video__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-note{font-style:italic;color:var(--muted);margin:26px auto 0;max-width:52ch;
+  font-size:16.5px}
+.cream-cta{margin:30px 0 0}
+
+/* ═══════════ SESSION SCHEDULE ═══════════ */
+.tz{max-width:720px;margin:26px auto 0;display:grid;gap:9px}
+.tz .r{display:flex;justify-content:space-between;gap:20px;padding:14px 18px;
+  border:1px solid var(--line);border-radius:3px;background:#fbf7ee;text-align:left}
+.tz .g{font-weight:600;font-size:15px;color:var(--ink)}
+.tz .t{font-family:Cinzel;font-size:13px;color:var(--gold);text-align:right}
+@media (max-width:820px){.tz .r{flex-direction:column;gap:5px}.tz .t{text-align:left}}
+.dates{font-family:Cinzel;color:var(--gold);font-size:clamp(15.5px,1.8vw,19px);
+  line-height:1.7;margin:24px 0 0}
+
+/* ═══════════ VALUE STACK ═══════════ */
+.vlist{max-width:800px;margin:26px auto 0}
+.vrow{display:flex;justify-content:space-between;align-items:baseline;gap:26px;
+  padding:16px 0;border-bottom:1px solid var(--line);text-align:left}
+.vrow:last-child{border-bottom:0}
+.vitem{font-size:16.5px;color:var(--body)}
+.vval{font-family:Cinzel;font-weight:500;color:var(--gold);white-space:nowrap;
+  font-size:13px;letter-spacing:.05em;text-transform:uppercase}
+.vtotal{display:flex;justify-content:space-between;align-items:baseline;max-width:800px;
+  margin:16px auto 0;padding:20px 0 0;border-top:2px solid var(--gold)}
+.vt-l{font-family:Cinzel;font-weight:500;font-size:clamp(18px,2.2vw,23px)}
+.vt-r{font-family:Cinzel;font-weight:600;color:var(--gold);font-size:clamp(22px,3vw,33px)}
+
+/* ═══════════ PRICING ═══════════ */
+.s-invest{background:var(--parch-2);padding:var(--pad-y) 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.s-invest .inner{max-width:900px;margin:0 auto;padding:0 28px;text-align:center}
+.s-emph{font-family:Cinzel;font-weight:500;color:var(--gold);
+  font-size:clamp(24px,3.3vw,40px);margin:0 0 12px;letter-spacing:.02em}
+.s-line{color:var(--muted);font-size:16.5px;margin:0}
+.countdown{font-family:Cinzel;font-weight:500;letter-spacing:.07em;color:var(--gold);
+  font-size:clamp(14.5px,1.8vw,18px);margin:22px 0 0}
+.countdown span{font-variant-numeric:tabular-nums}
+.price-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;
+  max-width:860px;margin:32px auto 0}
+.pcard{display:flex;flex-direction:column;align-items:center;text-align:center;gap:7px;
+  padding:30px 20px;background:#fbf7ee;border:1px solid var(--line);border-radius:3px;
+  text-decoration:none;transition:.2s}
+.pcard:hover{border-color:var(--gold);box-shadow:0 14px 38px rgba(29,26,21,.1);
+  transform:translateY(-2px)}
+.pcard__plan{font-family:Cinzel;font-size:13px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted)}
+.pcard__amt{font-family:Cinzel;font-weight:600;font-size:clamp(28px,3.3vw,39px);
+  line-height:1;color:var(--ink)}
+.pcard__sub{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--muted)}
+.pcard__btn{margin-top:12px;width:100%;font-family:Raleway;font-weight:600;font-size:11px;
+  letter-spacing:.11em;text-transform:uppercase;color:#fff;background:var(--gold);
+  border-radius:2px;padding:13px}
+.pcard:hover .pcard__btn{background:#96701f}
+@media (max-width:820px){.price-cards{grid-template-columns:1fr}}
+.price-ref{max-width:520px;margin:30px auto 0;padding:16px 22px;border:1px solid var(--line);
+  border-radius:3px;background:#fbf7ee;font-size:15.5px;color:var(--muted)}
+.price-ref b{font-family:Cinzel;font-weight:600;color:var(--gold);font-size:17px}
+.invest-note{font-family:Cinzel;font-size:clamp(16.5px,1.9vw,20px);line-height:1.48;
+  max-width:54ch;margin:30px auto 0}
+.guarantee-box{max-width:700px;margin:26px auto 0;border:1.5px solid var(--gold);
+  border-radius:3px;padding:clamp(30px,4vw,44px);background:#fbf7ee}
+.guarantee-box p{font-size:17px;line-height:1.74;margin:0}
+.closed-note{max-width:640px;margin:0 auto;border:1.5px solid var(--gold);border-radius:3px;
+  padding:clamp(30px,4vw,44px);background:#fbf7ee}
+.closed-note h3{margin:0 0 14px;font-size:clamp(20px,2.5vw,26px);color:var(--ink)}
+.closed-note p{font-size:16.5px;margin:0 0 24px}
+
+/* ── FAQ ── */
+.faq{border-bottom:1px solid var(--line);text-align:left}
+.faq:last-child{border-bottom:0}
+.faq summary{list-style:none;cursor:pointer;font-family:Cinzel;font-weight:500;
+  font-size:clamp(16px,1.8vw,19px);padding:19px 44px 19px 0;position:relative;
+  color:var(--ink);line-height:1.36}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:4px;top:16px;font-family:Raleway;
+  font-size:24px;color:var(--gold);transition:.2s}
+.faq[open] summary:after{content:"\2212"}
+.faq__a{padding:0 44px 21px 0}
+.faq__a p{font-size:16.5px;margin:0}
+
+/* ── footer ── */
+footer{background:var(--parch-2);color:var(--body);padding:58px 0 46px;font-size:13px;
+  border-top:1px solid var(--line)}
+footer .top{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.social{display:flex;gap:17px}
+.social a{width:38px;height:38px;border:1px solid rgba(29,26,21,.2);border-radius:50%;
+  display:grid;place-items:center;transition:.2s}
+.social a:hover{border-color:var(--gold);background:rgba(176,132,43,.08)}
+.social svg{width:16px;height:16px;fill:var(--muted)}
+.social a:hover svg{fill:var(--gold)}
+.legal,.foot-progs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.legal a,.foot-progs a,.foot-mail a{text-decoration:none;border-bottom:1px solid transparent}
+.legal a:hover,.foot-progs a:hover,.foot-mail a:hover{border-color:var(--gold)}
+.copy-line{color:#8a806b;margin:22px 0 0;text-align:center;font-size:12.5px}
+/* build 62 — footer email + sister programs. Selectors extended rather than
+   duplicated so the three rows cannot drift apart later. */
+.foot-mail{margin:0}
+.foot-progs span{color:var(--muted)}
+
+/* ── enrollment page ── */
+.enroll-head{padding:clamp(60px,8vw,100px) 0 0;text-align:center}
+.enroll-head h1{font-family:Cinzel;font-weight:500;font-size:clamp(30px,4.4vw,50px);
+  line-height:1.1;color:var(--ink);max-width:18ch;margin:0 auto}
+.enroll-head .lede{max-width:56ch;margin:26px auto 0;font-size:17px}
+.enroll-mini{list-style:none;max-width:660px;margin:26px auto 0;padding:0}
+.enroll-mini li{display:flex;justify-content:space-between;gap:18px;align-items:baseline;
+  padding:12px 0;border-bottom:1px solid var(--line);text-align:left}
+.enroll-mini li:last-child{border-bottom:0}
+.enroll-mini .mi{font-size:16px;color:var(--body)}
+.enroll-mini .mv{font-family:Cinzel;font-weight:500;font-size:13px;color:var(--muted);
+  white-space:nowrap}
+
+/* ═══════════ RESPONSIVE ═══════════ */
+@media (max-width:900px){
+  .duo{grid-template-columns:1fr}
+  .duo>.pic,.duo.rev>.pic{order:1;min-height:56vw;max-height:520px}
+  .duo>.txt,.duo.rev>.txt{order:2}
+  .duo>.txt>.inner{max-width:none}
+  .s-hero{min-height:78vh}.s-hero__inner{padding:100px 24px}
+  .psec>.overlay{padding:56px 24px}
+  .plate-box{padding:28px 22px}
+  .pweeks .wk{display:block;min-width:0;margin:0 0 3px}
+  .brand img{height:44px}
+}
+@media (max-width:520px){.btn{padding:14px 22px}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}html{scroll-behavior:auto}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET — 2026.07.26
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (3) emotions set over the volcano, centred, white */
+.duo>.pic{overflow:hidden}
+.pic-ov{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;padding:34px 22px;
+  background:linear-gradient(180deg,rgba(0,0,0,.16),rgba(0,0,0,.30))}
+.pic-ov .pemotions{display:flex;flex-direction:column;align-items:center;gap:2px;
+  margin:0}
+.pic-ov .pemotions span{font-family:Raleway;font-weight:400;color:#fff;
+  font-size:clamp(14px,1.55vw,19px);line-height:1.42;letter-spacing:.02em;
+  text-shadow:0 2px 14px rgba(0,0,0,.85),0 0 34px rgba(0,0,0,.6)}
+
+/* (4) gold hairline as a border, not a frame — gap now reads as cream */
+.cream-video{background:transparent;padding:5px}
+
+/* (5) optional hairlines between sub-blocks */
+.outcomes.noline .o{border-top:0;padding:16px 0}
+.outcomes.noline .o:first-child{padding-top:4px}
+.s-list.noline li{border-bottom:0;padding:9px 0 9px 27px}
+.s-list.noline li:before{top:17px}
+
+/* (6) twelve-week journey — both columns at one size */
+.pweeks li{font-size:17px}
+.pweeks .wk{font-size:17px;min-width:118px;letter-spacing:.03em}
+
+/* (7) value stack maps to the journey sizing */
+.vitem{font-size:17px}
+.vval{font-size:17px;text-transform:none;letter-spacing:.02em}
+
+/* (8) session schedule — raised luminosity */
+.solo.lum{background:#fdfaf1}
+.solo.lum .tz .r{background:#fffdf7}
+
+/* (9) payment boxes get a gold hairline */
+.pcard{border:1.5px solid var(--gold)}
+.pcard:hover{border-color:#96701f}
+
+/* (9)(10)(11) animated gold gradient on primary CTAs */
+@keyframes goldflow{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.pcard__btn,.btn-anim{
+  background-image:linear-gradient(100deg,#a87d26 0%,#fecb3e 25%,#e0ad33 50%,
+    #fecb3e 75%,#a87d26 100%);
+  background-size:200% 100%;animation:goldflow 5s linear infinite}
+.btn-anim{color:#2a2008;border-color:transparent;text-shadow:0 1px 0 rgba(255,255,255,.25)}
+.btn-anim:hover{filter:brightness(1.07)}
+.pcard__btn{color:#2a2008;text-shadow:0 1px 0 rgba(255,255,255,.25)}
+.pcard:hover .pcard__btn{background-image:linear-gradient(100deg,#a87d26 0%,#fecb3e 25%,
+  #e0ad33 50%,#fecb3e 75%,#a87d26 100%);filter:brightness(1.07)}
+
+/* (11) 'Not Sure' returns to the photograph */
+.psec.tall{min-height:74vh}
+.psec.tall>.media,.psec.tall>.media img{position:absolute;inset:0;width:100%;height:100%}
+.psec.tall>.media img{object-fit:cover;object-position:center 42%}
+.psec.tall>.scrim{position:absolute;inset:0;background:linear-gradient(180deg,
+  rgba(6,7,9,.46),rgba(6,7,9,.24) 42%,rgba(6,7,9,.62))}
+.psec.tall>.overlay{position:relative;z-index:2;min-height:74vh;padding:11vh 7vw}
+.psec .p-in{max-width:720px;margin:0 auto;text-align:center}
+.psec .p-in h2{color:var(--gold-bright);text-shadow:0 2px 26px rgba(0,0,0,.75)}
+.psec .p-in .crule{background:var(--gold-bright);margin-left:auto;margin-right:auto}
+.psec .p-in p{color:#f4efe6;font-size:clamp(16px,1.85vw,20px);
+  text-shadow:0 2px 18px rgba(0,0,0,.9)}
+
+/* (12) closing photograph — tighter crop, figure fills more of the frame */
+.duo>.pic.zoom img{transform:scale(1.11);transform-origin:center}
+
+@media (max-width:900px){
+  .psec.tall,.psec.tall>.overlay{min-height:60vh}
+  .psec.tall>.overlay{padding:64px 26px}
+  .pic-ov{padding:26px 18px}
+  .pweeks .wk{min-width:0;display:block;margin:0 0 3px}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CTA UNIFICATION — every primary button carries the animated gold
+   ═══════════════════════════════════════════════════════════════ */
+.btn-solid,.btn-anim,.pcard__btn{
+  background-image:linear-gradient(100deg,#a87d26 0%,#fecb3e 25%,#e0ad33 50%,
+    #fecb3e 75%,#a87d26 100%);
+  background-size:200% 100%;
+  background-color:#c4922e;
+  animation:goldflow 5s linear infinite;
+  color:#2a2008;
+  border-color:transparent;
+  text-shadow:0 1px 0 rgba(255,255,255,.28)}
+.btn-solid:hover,.btn-anim:hover,.pcard:hover .pcard__btn{
+  background-image:linear-gradient(100deg,#a87d26 0%,#fecb3e 25%,#e0ad33 50%,
+    #fecb3e 75%,#a87d26 100%);
+  background-color:#c4922e;
+  filter:brightness(1.08)}
+/* on the hero and the surfer the button sits on a photograph — lift it */
+.s-hero .btn-solid,.psec .btn-solid,.psec .btn-anim{
+  box-shadow:0 6px 26px rgba(0,0,0,.42)}
+@media (prefers-reduced-motion:reduce){
+  .btn-solid,.btn-anim,.pcard__btn{animation:none;background-position:25% 50%}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 2 — 2026.07.26
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (1) gradient dialled back — narrower value range, much slower sweep.
+       Reads as a slow sheen across metal rather than a moving stripe. */
+.btn-solid,.btn-anim,.pcard__btn{
+  background-image:linear-gradient(100deg,
+    #b98c2c 0%, #c9992f 22%, #d8ab39 42%, #c9992f 62%, #b98c2c 100%);
+  background-size:260% 100%;
+  background-color:#c4922e;
+  animation:goldflow 18s linear infinite;
+  color:#fdf7e6;
+  text-shadow:0 1px 2px rgba(60,42,8,.45)}
+.btn-solid:hover,.btn-anim:hover,.pcard:hover .pcard__btn{
+  background-image:linear-gradient(100deg,
+    #b98c2c 0%, #c9992f 22%, #d8ab39 42%, #c9992f 62%, #b98c2c 100%);
+  filter:brightness(1.05)}
+@media (prefers-reduced-motion:reduce){
+  .btn-solid,.btn-anim,.pcard__btn{animation:none;background-position:42% 50%}
+}
+
+/* (2) footer credit */
+.hp{font-family:Cinzel;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  font-size:11.5px;color:var(--gold);margin:0 0 4px}
+
+/* (3) emotions — spaced, each in a gold-hairline plate */
+.pic-ov{padding:40px 26px}
+.pic-ov .pemotions{gap:clamp(7px,1vw,12px)}
+.pic-ov .pemotions span{
+  border:1px solid rgba(254,203,62,.62);border-radius:7px;
+  padding:clamp(5px,.7vw,8px) clamp(14px,1.7vw,24px);
+  background:rgba(12,9,4,.40);
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  box-shadow:0 2px 14px rgba(0,0,0,.34);
+  font-size:clamp(12.5px,1.35vw,17px);line-height:1.3;
+  text-shadow:0 1px 8px rgba(0,0,0,.8)}
+
+/* (4) hero — CTA clears the boots, credit line up 50% */
+.s-hero__with{font-size:18px;line-height:1.75}
+.s-hero .btn{position:relative;top:var(--hero-cta-drop)}
+:root{--hero-cta-drop:54px}   /* tune this one number to sit it on the rock */
+
+/* (5) 'Is This You?' — one grid, matched rows, extra head-space */
+.solo .filter-cols{display:grid;grid-template-columns:1fr 1fr;
+  column-gap:clamp(26px,4vw,56px);max-width:960px;margin:8px auto 0;text-align:left}
+.filter-cols h3{font-family:Cinzel;font-weight:500;font-size:19px;color:var(--gold);
+  margin:0 0 12px;align-self:end}
+/* (superseded — filter columns are plain lists now) */
+
+/* (5) 30px more air above the headline in this section */
+.solo.headroom{padding-top:calc(var(--pad-y) + 30px)}
+
+/* (6) seamless butt between stacked photo sections — no hairline anywhere */
+.duo,.solo,.psec{border-top:0}
+.duo>.pic{line-height:0;font-size:0}
+.duo>.pic img{display:block;backface-visibility:hidden}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 3 — 2026.07.26
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (4) emotions: gold plate removed, plain white over the volcano */
+.pic-ov{padding:38px 24px;
+  background:linear-gradient(180deg,rgba(0,0,0,.20),rgba(0,0,0,.34))}
+.pic-ov .pemotions{gap:clamp(6px,.85vw,11px)}
+.pic-ov .pemotions span{
+  border:0;border-radius:0;padding:0;background:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;
+  color:#fff;font-size:clamp(13px,1.4vw,18px);line-height:1.34;
+  letter-spacing:.02em;
+  text-shadow:0 2px 12px rgba(0,0,0,.9),0 0 30px rgba(0,0,0,.75)}
+
+/* (11) 'Is NME For You?' — hairlines out, prior spacing back.
+        The matched-row grid stays, so the columns still finish level. */
+
+/* (17) 'Not Sure' — 20px more top and bottom, text stays centred */
+.psec.tall>.overlay{padding-top:calc(11vh + 20px);padding-bottom:calc(11vh + 20px)}
+@media (max-width:900px){
+  .psec.tall>.overlay{padding-top:calc(64px + 20px);padding-bottom:calc(64px + 20px)}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LAYOUT CAP — confirmed at the 27" preview
+   Above 1600px the split sections stop growing and centre. Photo
+   panels top out at 800px wide, so framing is stable everywhere
+   at or above 1600 and the page stops thinning out on big monitors.
+   ═══════════════════════════════════════════════════════════════ */
+.duo{max-width:1600px;margin-left:auto;margin-right:auto}
+
+/* new hero (1.635 ratio) — inline object-position from CFG["hero_pos"] wins */
+.s-hero__media img{object-position:center 50%}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO — whole photograph, nothing cropped.
+   The sky was extended in Photoshop to hold the eyebrow and headline,
+   so the section takes the image's native height and the copy splits:
+   eyebrow + H1 into the sky, everything else down onto the rock.
+   Iana is left clear in the middle of the frame.
+   ═══════════════════════════════════════════════════════════════ */
+.s-hero{position:relative;display:grid;min-height:0;overflow:visible;
+  background:var(--panel)}
+.s-hero__media{grid-area:1/1;position:relative;inset:auto;width:100%;height:auto}
+.s-hero__media img{position:relative;inset:auto;width:100%;height:auto;
+  object-fit:fill;display:block}
+.s-hero__scrim{grid-area:1/1;position:relative;background:linear-gradient(180deg,
+  rgba(9,7,4,.46) 0%,rgba(9,7,4,.20) 22%,rgba(9,7,4,.04) 44%,
+  rgba(9,7,4,.10) 66%,rgba(9,7,4,.62) 100%)}
+.s-hero__inner{grid-area:1/1;position:relative;z-index:2;display:flex;
+  flex-direction:column;justify-content:space-between;align-items:center;
+  padding:clamp(30px,4.4vw,74px) 28px clamp(26px,3.4vw,58px);
+  max-width:1200px;margin:0 auto;width:100%;text-align:center}
+.hero-sky,.hero-rock{width:100%}
+.s-hero h1{margin:0}
+.s-hero .kicker{margin:0 0 16px}
+.s-hero__sub{margin:0 auto 12px;max-width:36ch}
+.s-hero__tag{margin:0 0 10px}
+.s-hero__with{margin:0 0 22px;max-width:52ch;margin-left:auto;margin-right:auto}
+:root{--hero-cta-drop:0px}      /* copy now sits on the rock; nudge if needed */
+
+/* on a phone a 1.6:1 hero is ~240px tall — far too short to hold copy.
+   Show the whole photograph, then set the words beneath it on panel. */
+@media (max-width:900px){
+  .s-hero{display:block}
+  .s-hero__scrim{display:none}
+  .s-hero__inner{display:block;background:var(--panel);
+    padding:34px 24px 40px;max-width:none}
+  .hero-sky{margin:0 0 20px}
+  .s-hero h1,.s-hero__sub,.s-hero__tag,.s-hero__with{text-shadow:none}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 4 — 2026.07.27
+   Two golds now, deliberately:
+     --copper   #b0842b  the original — hairlines, rules, quiet marks
+     --gold-cta #c9992f  the CTA gold — buttons and their borders
+   ═══════════════════════════════════════════════════════════════ */
+:root{--copper:#b0842b;--gold-cta:#c9992f}
+
+/* (1) header button matches the CTAs, and fills with the CTA gold on hover */
+.btn-ghost{border-color:var(--gold-cta);color:var(--ink);background:none}
+.btn-ghost:hover{
+  background-image:linear-gradient(100deg,#b98c2c 0%,#c9992f 22%,#d8ab39 42%,
+    #c9992f 62%,#b98c2c 100%);
+  background-size:260% 100%;background-color:var(--gold-cta);
+  border-color:transparent;color:#fdf7e6;
+  animation:goldflow 18s linear infinite}
+
+/* (2b)(7c)(10c) pull-quote hairlines in copper, attribution up 40% */
+.pq{border-top-color:var(--copper)}
+.pq figcaption{font-size:17.5px}          /* was 12.5px */
+
+/* (4b)(4c) wall bullets: no rules, and matched air above and below */
+.plist li{border-bottom:0;padding:9px 0 9px 27px}
+.plist li:before{top:17px}
+.plist{margin:24px 0 30px}
+
+/* (6) the questions — one per line, generous separation */
+.beat blockquote{display:flex;flex-direction:column;gap:clamp(20px,2.6vw,34px);
+  max-width:1020px}
+.beat blockquote span{display:block}
+
+/* (7) callouts inside You've Tried — italic, not bold */
+.cream-steps .st .cal,.outcomes .o .cal{display:inline;font-style:italic;
+  font-weight:400;color:inherit}
+.cream-steps .st .em{display:inline;font-weight:400;color:inherit}
+
+/* (16b)(16e) outcomes list — room for "communication", even columns */
+.cream-bullets{max-width:900px;column-gap:40px}
+
+/* (17b)(17d) From / To in the headline gold */
+.from-to .f i,.from-to .t i{font-style:normal;font-weight:600;color:var(--copper);
+  margin-right:5px}
+/* (17e) more air before the closing paragraph */
+.from-to{margin-bottom:20px}
+
+/* (18) filter bullets tightened to match the outcomes list */
+.filter-cols h3{margin:0 0 4px}
+
+/* (21) schedule up 20%, ratio between geography and time preserved */
+.dates{font-size:clamp(18.5px,2.15vw,23px)}
+.tz .g{font-size:18px}
+.tz .t{font-size:15.5px}
+
+/* (23) 'Not Sure' — 30px more top and bottom, copy still dead centre */
+.psec.tall>.overlay{padding-top:calc(11vh + 50px);padding-bottom:calc(11vh + 50px)}
+@media (max-width:900px){
+  .psec.tall>.overlay{padding-top:calc(64px + 50px);padding-bottom:calc(64px + 50px)}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 5 — 2026.07.28
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (1) 'Is NME For You?' — two ordinary lists again.
+       The matched-row grid was setting each row to the height of the
+       TALLER of the two bullets, so a one-line bullet opposite a
+       three-line bullet inherited all that empty space. Rhythm now
+       comes from the same padding as .cream-bullets. */
+.filter-cols{display:grid;grid-template-columns:1fr 1fr;
+  gap:clamp(26px,4vw,56px);max-width:960px;margin:26px auto 0;
+  text-align:left;align-items:start}
+.filter-cols h3{margin:0 0 10px}
+.filter-cols .fl{list-style:none;margin:0;padding:0}
+.filter-cols .fl li{position:relative;padding:8px 0 8px 26px;
+  font-size:16.5px;color:var(--body);border:0}
+.filter-cols .fl li:before{content:"";position:absolute;left:2px;top:17px;
+  width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+@media (max-width:820px){.filter-cols{grid-template-columns:1fr;gap:26px}}
+
+/* (2) 'Not Sure' — 35px more photograph above and below the copy,
+       which keeps the text block dead centre and just opens the frame */
+.psec.tall{min-height:calc(74vh + 70px)}
+.psec.tall>.overlay{min-height:calc(74vh + 70px);
+  padding-top:calc(11vh + 85px);padding-bottom:calc(11vh + 85px)}
+@media (max-width:900px){
+  .psec.tall,.psec.tall>.overlay{min-height:calc(60vh + 70px)}
+  .psec.tall>.overlay{padding-top:calc(64px + 85px);padding-bottom:calc(64px + 85px)}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 6 — 2026.07.28  (annotated review)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (3) 'Is NME For You?' — widen the columns so 'holds' pulls up onto
+       line 2 and 'Actually commit.' stops stranding a word. text-wrap
+       pretty is the belt-and-braces against any future widow. */
+.filter-cols{max-width:1080px;gap:clamp(26px,3.4vw,48px)}
+.filter-cols .fl li{text-wrap:pretty}
+
+/* (5) the beat — 50px more air above the first question and below the last */
+.beat{padding-top:calc(clamp(64px,10vh,120px) + 50px);
+      padding-bottom:calc(clamp(64px,10vh,120px) + 50px)}
+
+/* (7) From / To — tighten the gap after the marker, and let the pairs
+       use the full text panel so 'market' and 'nothing' stay on line one */
+.from-to{max-width:none}
+.from-to .f i,.from-to .t i{margin-right:0}
+.from-to li{text-wrap:pretty}
+
+/* (9) 'Not Sure' — frame out another 30px top and bottom, headline on
+       one line and lifted, body dropped clear of the wave, CTA pushed down */
+.psec.tall{min-height:calc(74vh + 130px)}
+.psec.tall>.overlay{min-height:calc(74vh + 130px);
+  padding-top:calc(11vh + 115px);padding-bottom:calc(11vh + 115px)}
+.psec .p-in{max-width:900px}
+.psec.tall .p-in h2{margin-top:-20px;margin-bottom:0}
+.psec.tall .p-in p:first-of-type{margin-top:40px}
+.psec.tall .p-in .p-cta{margin:60px 0 0}
+@media (max-width:900px){
+  .psec.tall,.psec.tall>.overlay{min-height:calc(60vh + 130px)}
+  .psec.tall>.overlay{padding-top:calc(64px + 115px);padding-bottom:calc(64px + 115px)}
+  .psec.tall .p-in h2{margin-top:0}
+  .psec.tall .p-in p:first-of-type{margin-top:24px}
+  .psec.tall .p-in .p-cta{margin:36px 0 0}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 7 — 2026.07.28
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (1)(2) Headlines in split sections were being squeezed into the 54ch
+   reading measure meant for body copy, so a two-line headline was
+   wrapping to three. The measure now governs the copy only; the
+   headline gets the full text panel. */
+.duo>.cp{padding-left:clamp(26px,3.6vw,62px);padding-right:clamp(26px,3.6vw,62px)}
+.duo>.cp>.inner{max-width:none}
+.duo>.cp>.inner>p,
+.duo>.cp>.inner>ul:not(.from-to),
+.duo>.cp>.inner>ol,
+.duo>.cp>.inner>.outcomes,
+.duo>.cp>.inner>.pemotions,
+.duo>.cp>.inner>figure{max-width:54ch}
+.duo>.cp>.inner>h2{max-width:none;text-wrap:balance}
+
+/* (3) 'Not Sure' — headline up another 25px, copy and CTA down 70px */
+.psec.tall .p-in h2{margin-top:-45px}
+.psec.tall .p-in p:first-of-type{margin-top:110px}
+@media (max-width:900px){
+  .psec.tall .p-in h2{margin-top:0}
+  .psec.tall .p-in p:first-of-type{margin-top:24px}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 8 — headline sizing tied to the panel, not the viewport
+   Previous attempts set the headline from vw, so it was correct at
+   1600px and too large in a smaller window — which is why an explicit
+   <br> still produced three lines. cqw measures the text panel itself,
+   so the longest segment fits at every width.
+   ═══════════════════════════════════════════════════════════════ */
+.duo>.cp{container-type:inline-size}
+.duo>.cp>.inner>h2{font-size:clamp(21px,4.4cqw,38px);line-height:1.15}
+
+/* 'Not Sure' — copy block and CTA down a further 70px (110 -> 180) */
+.psec.tall .p-in p:first-of-type{margin-top:180px}
+@media (max-width:900px){.psec.tall .p-in p:first-of-type{margin-top:24px}}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 9 — revert the global margin change, scope it properly
+   ═══════════════════════════════════════════════════════════════ */
+
+/* REVERT: padding and headline width go back to what they were.
+   Change set 7/8 applied these globally and pushed every headline
+   into the right margin. */
+.duo>.cp{padding-left:var(--pad-x);padding-right:var(--pad-x)}
+.duo>.cp>.inner{max-width:54ch}
+.duo>.cp>.inner>h2{max-width:54ch;font-size:clamp(25px,3.1vw,40px);
+  text-wrap:wrap;line-height:1.17}
+
+/* ONLY the two sections that need a two-line headline get the extra
+   width, and only their own headline — nothing else moves. */
+.duo>.cp>.inner>h2.w2{max-width:none;font-size:clamp(21px,4.4cqw,38px);
+  line-height:1.15;text-wrap:balance}
+
+/* 'Not Sure' — the overlay centres its content, so a margin makes the
+   block taller and the centring gives half of it straight back. These
+   are relative offsets: layout ignores them, so the movement is exact. */
+.psec.tall .p-in h2{margin-top:0;margin-bottom:0;position:relative;top:-45px}
+.psec.tall .p-in p:first-of-type{margin-top:0;position:relative;top:160px}
+.psec.tall .p-in .p-cta{margin:60px 0 0;position:relative;top:160px}
+@media (max-width:900px){
+  .psec.tall .p-in h2{top:0}
+  .psec.tall .p-in p:first-of-type{margin-top:24px;top:0}
+  .psec.tall .p-in .p-cta{margin:36px 0 0;top:0}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 10 — two headlines locked to two lines
+   Each line is its own block and cannot wrap. Size is driven by the
+   panel (cqw) at a coefficient that fits the longest line — 26
+   characters of Cinzel — at every panel width from 450px to 800px.
+   These two headlines therefore run smaller than the rest; at this
+   panel width 26 characters cannot sit on one line at 37px.
+   ═══════════════════════════════════════════════════════════════ */
+.duo>.cp>.inner>h2.w2{max-width:none;font-size:clamp(16px,3.9cqw,34px);
+  line-height:1.18;text-wrap:wrap}
+.duo>.cp>.inner>h2.w2>span{display:block;white-space:nowrap}
+
+/* below 900px the panel goes full width and nowrap would overflow —
+   let these wrap naturally there */
+@media (max-width:900px){
+  .duo>.cp>.inner>h2.w2{font-size:clamp(25px,6.4vw,34px)}
+  .duo>.cp>.inner>h2.w2>span{white-space:normal}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CHANGE SET 11 — revert. Both headlines back to the standard size
+   and standard wrapping, with the line break in the copy only.
+   The .w2 treatment is fully neutralised.
+   ═══════════════════════════════════════════════════════════════ */
+.duo>.cp>.inner>h2.w2,
+.duo>.cp>.inner>h2{max-width:54ch;font-size:clamp(25px,3.1vw,40px);
+  line-height:1.17;text-wrap:wrap}
+.duo>.cp>.inner>h2>span{display:inline;white-space:normal}
+
+/* ═══════════════════════════════════════════════════════════════
+   TESTIMONIALS — summary + attribution always visible, body on demand.
+   First one open so the section never reads as empty. The three legacy
+   quotes below stay fully open and unchanged.
+   ═══════════════════════════════════════════════════════════════ */
+.tst{border-bottom:1px solid rgba(254,203,62,.20)}
+.tst:last-of-type{border-bottom:0}
+.tst summary{list-style:none;cursor:pointer;position:relative;
+  padding:17px 42px 17px 0}
+.tst summary::-webkit-details-marker{display:none}
+.tst summary:after{content:"+";position:absolute;right:4px;top:15px;
+  font-family:Raleway;font-weight:400;font-size:23px;line-height:1;
+  color:var(--gold-bright);transition:.18s}
+.tst[open] summary:after{content:"\2212"}
+.tst summary:hover .ts{color:#ffd964}
+.ts{display:block;font-family:Cinzel;font-weight:500;
+  font-size:clamp(16px,1.9vw,20px);line-height:1.3;color:var(--gold-bright)}
+.tn{display:block;font-family:Raleway;font-weight:500;font-size:12.5px;
+  letter-spacing:.07em;color:#c3b79f;margin:7px 0 0}
+.tst blockquote{margin:0;padding:0 42px 22px 0;font-style:italic;color:#f1ebdf;
+  font-size:clamp(15.5px,1.7vw,17.5px);line-height:1.66}
+@media (max-width:900px){
+  .tst summary{padding:15px 34px 15px 0}
+  .tst blockquote{padding:0 0 18px}
+}
+
+/* (2) quotation marks on every testimonial, new and legacy */
+.tst blockquote::before,.pquote blockquote::before{content:"\201C"}
+.tst blockquote::after,.pquote blockquote::after{content:"\201D"}
+.tst blockquote::before,.tst blockquote::after,
+.pquote blockquote::before,.pquote blockquote::after{color:var(--gold-bright);
+  font-style:normal}
+
+/* legacy-block label up 40% (12.5px -> 17.5px) */
+.plate-lbl{font-size:17.5px;letter-spacing:.16em}
+
+/* ═══════════════════════════════════════════════════════════════
+   THE BEAT — indigo. Scoped to this section only; nothing else moves.
+   Gold sits 166 degrees from indigo on the wheel and 8 degrees from
+   the old chocolate. That hue gap, not contrast, is what makes it read
+   as luminous — the chocolate version actually had HIGHER contrast.
+   Radial gradient lifts the centre so the panel glows rather than sits.
+   ═══════════════════════════════════════════════════════════════ */
+.beat{
+  background:
+    radial-gradient(115% 85% at 50% 34%,
+      #3f4189 0%, #363878 38%, #2b2d63 68%, #23254e 100%);
+  border-top:1px solid rgba(254,203,62,.30);
+  border-bottom:1px solid rgba(254,203,62,.30);
+  position:relative}
+/* a faint warm bloom behind the type, so the words lift off the field */
+.beat:before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 45% at 50% 42%,
+    rgba(254,203,62,.09) 0%, rgba(254,203,62,0) 70%)}
+.beat blockquote{position:relative;color:#ffd764}
+.beat blockquote span{
+  text-shadow:0 1px 0 rgba(0,0,0,.35), 0 0 34px rgba(255,215,100,.22)}
+.beat figcaption{color:#a9a6d0}
+
+/* ═══════════════════════════════════════════════════════════════
+   THE BEAT — midnight navy, deepened. Core lifted to a phosphorescent
+   blue around the type, edges taken almost to black. Core-to-edge
+   lightness range widens from 19 points to 32, which is what reads
+   as depth rather than a flat field.
+   ═══════════════════════════════════════════════════════════════ */
+.beat{
+  background:
+    radial-gradient(88% 72% at 50% 42%,
+      #26339c 0%, #202b83 22%, #1c2770 40%, #0e1440 74%, #03051a 100%)}
+.beat:before{
+  background:radial-gradient(52% 40% at 50% 44%,
+    rgba(120,150,255,.10) 0%, rgba(120,150,255,0) 72%)}
+.beat blockquote span{
+  text-shadow:0 1px 0 rgba(0,0,0,.45), 0 0 40px rgba(255,215,100,.26)}
+
+/* ═══════════════════════════════════════════════════════════════
+   COLOUR RECORD — indigo evaluation, 2026.07.28
+   Kept in the source of truth so it survives every rebuild.
+   Full reasoning and contrast tables: COLOUR-REFERENCE.md
+   ───────────────────────────────────────────────────────────────
+   A  royal indigo      #2f3280 #262a66 #1b1e4e #12143a
+   B  deep ink indigo   #252a6b #1d2158 #151840 #0d0f2b
+   C  violet indigo     #332b78 #282262 #1c1848 #120f32   rejected: too near gold
+   D  midnight navy     #1f2a75 #18225e #111845 #080d2c   SELECTED
+   E  first attempt     #3f4189 #363878 #2b2d63 #23254e   superseded: too light
+   ───────────────────────────────────────────────────────────────
+   D, deepened — in use:
+      #26339c  #202b83  #1c2770  #0e1440  #03051a
+      core-to-edge lightness range 32 points (D as shown was 19)
+      gold #fecb3e clears 6.8:1 at the core, 13.3:1 at the edge
+   ───────────────────────────────────────────────────────────────
+   Governing finding: gold on chocolate #17130d measures 12.2:1 with an 8
+   degree hue gap and reads dead. Gold on navy measures 7.4:1 with a 166
+   degree hue gap and reads luminous. Hue separation, not contrast ratio,
+   is what produces the sense of light. Apply to all future colour work.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO — copy and typography pass, 2026.07.28
+   Offsets use position:relative, not margin. The hero overlay is a
+   space-between flex column, so a margin would change the block height
+   and the layout would absorb part of every move. Relative offsets are
+   invisible to layout, so 60px is exactly 60px.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (3) eyebrow up 50%  (14px -> 21px) */
+.s-hero .kicker{font-size:21px;letter-spacing:.18em;margin:0 0 22px}
+
+/* (4) headline and sub-headline down 10%  (34/5.6vw/70 -> 31/5.04vw/63) */
+.s-hero h1{font-size:clamp(31px,5.04vw,63px)}
+
+/* (3)(4) eyebrow and headline both rise 60px — moved as one block */
+.hero-sky{position:relative;top:-60px}
+
+/* (6) tagline up 30%  (16/1.9vw/21 -> 21/2.47vw/27), position unchanged */
+.s-hero__tag{font-size:clamp(21px,2.47vw,27px)}
+
+/* (5) CTA down 50px */
+:root{--hero-cta-drop:50px}
+
+@media (max-width:900px){
+  /* the hero stacks on a phone; offsets would push copy off the panel */
+  .hero-sky{top:0}
+  .s-hero .kicker{font-size:17px;margin:0 0 16px}
+  .s-hero__tag{font-size:clamp(18px,4.6vw,22px)}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO — second typography pass, 2026.07.28
+   Headline and sub-headline now carry different sizes, so they are
+   separate spans inside the h1 rather than one line broken by <br>.
+   The h1 still reads as a single heading to a crawler.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (2) headline down 20%   clamp(31,5.04vw,63) -> clamp(25,4.03vw,50) */
+.s-hero h1{font-size:clamp(25px,4.03vw,50px)}
+.s-hero h1 .hl{display:block}
+
+/* (3) sub-headline down 30%  clamp(31,5.04vw,63) -> clamp(22,3.53vw,44) */
+.s-hero h1 .hsub{display:block;font-size:clamp(22px,3.53vw,44px);
+  margin:.34em 0 0;line-height:1.12}
+
+/* (1)(2)(3) eyebrow, headline and sub-headline all rise a further 25px
+   (was -60, now -85) — still a relative offset, so layout absorbs none of it */
+.hero-sky{top:-85px}
+
+/* (4) CTA down a further 10px (was 50, now 60) */
+:root{--hero-cta-drop:60px}
+
+@media (max-width:900px){
+  .hero-sky{top:0}
+  .s-hero h1 .hsub{font-size:clamp(19px,4.4vw,26px);margin:.3em 0 0}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO — third pass, 2026.07.28
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (1) sub-headline sized so all 47 characters hold one line at every
+   viewport from 900px up — verified, widest case is 1083px of type in
+   1144px of content. nowrap makes it structural rather than a fit that
+   could drift if the copy changes. */
+.s-hero h1 .hsub{font-size:clamp(18px,2.6vw,32px);white-space:nowrap}
+
+/* (2) CTA down a further 27px  (60 -> 87) */
+:root{--hero-cta-drop:87px}
+
+@media (max-width:900px){
+  /* below 900 the hero stacks and the panel is far narrower — let it wrap */
+  .s-hero h1 .hsub{font-size:clamp(17px,4.2vw,23px);white-space:normal}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO — fourth pass, 2026.07.28
+   (1) eyebrow, headline and sub-headline up a further 20px  (-85 -> -105)
+   (2) CTA down to the mark on the rock  (87 -> 155)
+   ═══════════════════════════════════════════════════════════════ */
+.hero-sky{top:-105px}
+:root{--hero-cta-drop:155px}
+@media (max-width:900px){.hero-sky{top:0}}
+
+/* HERO — eyebrow, headline and sub-headline up a further 20px  (-105 -> -125) */
+.hero-sky{top:-125px}
+@media (max-width:900px){.hero-sky{top:0}}
+
+/* HERO — eyebrow, headline and sub-headline up a further 25px  (-125 -> -150) */
+.hero-sky{top:-150px}
+@media (max-width:900px){.hero-sky{top:0}}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO — fifth pass, 2026.07.28
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (1) eyebrow, headline, sub-headline and now the tagline up 20px more
+       (-150 -> -170) */
+.hero-sky{top:-170px}
+
+/* (2) eyebrow takes the tagline's size and colour */
+.s-hero .kicker{font-size:clamp(21px,2.47vw,27px);color:var(--gold-bright)}
+
+/* (3) tagline now sits under the sub-headline as a second sub-head.
+       Size and colour unchanged; it just needs air above it. */
+.hero-sky .s-hero__tag{margin:.55em 0 0}
+
+@media (max-width:900px){
+  .hero-sky{top:0}
+  .s-hero .kicker{font-size:clamp(17px,4.4vw,21px)}
+  .hero-sky .s-hero__tag{margin:.5em 0 0}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUILD 53 — video frame ratio, and five mobile corrections
+   ═══════════════════════════════════════════════════════════════ */
+
+/* D1 + M1 · the video is 17:9, the frame was 16:9 — hence the black bands.
+   9/17 = 52.94%. The gold hairline is .cream-video wrapping this frame, so
+   it tightens by the same amount automatically. Desktop and mobile both. */
+.cream-video__frame{padding-top:52.94%}
+
+@media (max-width:900px){
+
+  /* M2 · hero copy block takes the same navy as the questions section */
+  .s-hero__inner{
+    background:radial-gradient(122% 76% at 50% 26%,
+      #26339c 0%, #202b83 22%, #1c2770 40%, #0e1440 74%, #03051a 100%)}
+
+  /* M3 · the CTA offset is a relative shift, invisible to layout — at 155px
+     it escaped the panel and landed on the next photograph. Off on mobile. */
+  :root{--hero-cta-drop:0px}
+  .s-hero .btn{top:0;margin-top:6px}
+
+  /* M4 · seventeen emotions in two columns, still over the photograph.
+     The last one runs long, so it spans both. */
+  .pemotions{display:grid;grid-template-columns:1fr 1fr;
+    gap:7px clamp(12px,4vw,22px);align-items:start;justify-items:center;
+    max-width:440px;margin:0 auto}
+  .pemotions span{font-size:clamp(12.5px,3.3vw,16px);line-height:1.34;
+    text-align:center}
+  .pemotions span:last-child{grid-column:1 / -1}
+
+  /* M5 · 'Not Sure' unstacks — photograph, then the copy on navy beneath it,
+     matching how every other section separates image from text on mobile.
+     Desktop is untouched. */
+  .psec.tall{display:block;min-height:0;overflow:visible}
+  .psec.tall>.media{position:relative;grid-area:auto;width:100%}
+  .psec.tall>.media img{position:relative;inset:auto;width:100%;height:auto;
+    aspect-ratio:3/2;object-fit:cover;object-position:center 42%}
+  .psec.tall>.scrim{display:none}
+  .psec.tall>.overlay{position:relative;grid-area:auto;display:block;
+    min-height:0;padding:40px 24px 46px;
+    background:radial-gradient(128% 84% at 50% 24%,
+      #26339c 0%, #202b83 22%, #1c2770 40%, #0e1440 74%, #03051a 100%)}
+  .psec.tall .p-in{max-width:none}
+  .psec.tall .p-in h2{position:static;top:auto;margin:0 0 4px}
+  .psec.tall .p-in p:first-of-type{position:static;top:auto;margin:22px 0 0}
+  .psec.tall .p-in .p-cta{position:static;top:auto;margin:30px 0 0}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUILD 54
+   ═══════════════════════════════════════════════════════════════ */
+
+/* 1 · 'Your Twelve-Week, Thirteen-Session Journey' takes the same navy as
+       the questions section — desktop and mobile, same five stops. */
+.solo.navy{
+  background:radial-gradient(96% 74% at 50% 34%,
+    #26339c 0%, #202b83 22%, #1c2770 40%, #0e1440 74%, #03051a 100%);
+  border-top:1px solid rgba(254,203,62,.24);
+  border-bottom:1px solid rgba(254,203,62,.24)}
+.solo.navy h2{color:var(--gold-bright)}
+.solo.navy .crule{background:var(--gold-bright);opacity:.85}
+.solo.navy p,.solo.navy li{color:#e6e2f0}
+.solo.navy .lead-in,.solo.navy .lead-in b{color:#f0ecf8}
+.solo.navy .pweeks li{border-color:rgba(254,203,62,.20)}
+.solo.navy .pweeks .wk{color:var(--gold-bright)}
+
+/* 2 · desktop only — the emotions block sits centred in the photo panel.
+       Drop it so its last line clears the last line of body copy beside it.
+       Relative offset, so the panel height is untouched. */
+@media (min-width:901px){
+  .pic-ov .pemotions{position:relative;top:86px}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUILD 55 — the mobile volcano, properly this time.
+
+   Two faults in the build 53 attempt, both mine:
+
+   1. SPECIFICITY. The two-column rule was written as `.pemotions`
+      (0,1,0). The desktop rule is `.pic-ov .pemotions` (0,2,0) and
+      wins at every width regardless of source order, so the grid
+      never applied. Media queries do not raise specificity.
+
+   2. CLIPPING. `.pic` is clamped to `max-height:520px` on mobile and
+      `.pic-ov` is `position:absolute; inset:0` inside it. Seventeen
+      items in one column exceed that, so the list was centred and cut
+      off at both ends. Two columns alone would not have fixed it.
+
+   Fix: match the desktop specificity, make the overlay define its own
+   height, and release the clamp on the panel that carries it.
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width:900px){
+  .duo .pic.has-ov{min-height:0;max-height:none}
+  .duo .pic.has-ov img{position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover}
+  .pic-ov{position:relative;inset:auto;padding:32px 16px}
+  .pic-ov .pemotions{display:grid;grid-template-columns:1fr 1fr;
+    gap:10px clamp(10px,4vw,20px);align-items:start;justify-items:center;
+    max-width:430px;margin:0 auto}
+  .pic-ov .pemotions span{font-size:clamp(12.5px,3.4vw,16px);line-height:1.32;
+    text-align:center}
+  .pic-ov .pemotions span:last-child{grid-column:1 / -1}
+}
+
+/* build 57 — the international-groups note under the schedule */
+.tz-note{margin:18px auto 0;max-width:56ch;text-align:center;
+  font-size:15.5px;line-height:1.6;color:var(--muted)}
+.tz-note a{color:var(--copper);text-decoration:underline;
+  text-underline-offset:3px;text-decoration-thickness:1px}
+.tz-note a:hover{color:var(--gold-cta)}
+
+/* build 58 — the international note sits on one line.
+   The solo inner is 820px wide with 28px padding each side = 764px of room.
+   92 characters of Raleway at 15px measures ~690px, so it fits with margin.
+   nowrap makes it structural; below 900px it wraps as normal. */
+.tz-note{max-width:none;font-size:15px;white-space:nowrap}
+@media (max-width:900px){
+  .tz-note{white-space:normal;max-width:44ch;font-size:15px}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUILD 59 — 'Is NME For You?' stacks on phones
+   ═══════════════════════════════════════════════════════════════ */
+
+/* The stacking rule already existed twice, at lines 157 and 643, written as
+   @media (max-width:820px){.filter-cols{grid-template-columns:1fr}}  (0,1,0).
+   But the layout is set by .solo .filter-cols (0,2,0) at line 479, and a media
+   query does not raise specificity — so neither rule ever fired, at any width.
+   Restating it at matching specificity, after the rule it has to beat.
+   34px rather than 26px: with no column edge to separate the two groups, the
+   gap is the only thing that says a new group has begun, and 26px read as
+   ordinary paragraph spacing. Desktop above 820px is untouched. */
+@media (max-width:820px){
+  .solo .filter-cols{grid-template-columns:1fr;gap:34px;max-width:none}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUILD 60 — /enroll head + value stack
+   ═══════════════════════════════════════════════════════════════ */
+
+/* (1.1) block up 25px with 25px of air beneath it. The top padding gives up
+         exactly what the bottom gains, so the section height does not move. */
+.enroll-head{padding:calc(clamp(60px,8vw,100px) - 25px) 0 25px}
+
+/* (1.2) the eyebrow. Every .kicker rule in this sheet is scoped .s-hero .kicker,
+         and the enroll eyebrow sits inside .enroll-head — so it has been
+         inheriting nothing: plain Raleway, mixed case, no tracking. Same
+         treatment the sales hero gets, sized for parchment rather than photo. */
+.enroll-head .kicker{font-family:Cinzel;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;font-size:20px;margin:0 0 20px}
+
+/* (2) the value stack now emits the sales page's own .vlist / .vtotal markup,
+       so no new rules are needed. .enroll-mini below is retained but unused;
+       .value-total / .tl / .tr never had rules at all, which is why the total
+       used to render as "Total value$9,264". */
+
+/* ═══════════════════════════════════════════════════════════════
+   BUILD 61 — pricing phases fail closed
+   ═══════════════════════════════════════════════════════════════ */
+
+/* PHASE_JS sets display inline and sits ~13,700 bytes after the last phase
+   block, so until it ran all three pricing blocks were in the layout: a
+   visitor saw $2,900, then $4,200, then "enrollment closed", stacked.
+   Hiding all three by default means they never paint; the script shows
+   exactly one. Note the script now sets 'block' rather than '' — with a
+   default rule in place, '' would fall back to display:none and hide
+   everything. The two changes only work together. */
+.phase-early,.phase-standard,.phase-closed{display:none}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUILD 64 — transformation section + header nav menu
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── the transformation section ──────────────────────────────────
+   .solo.navy p / li is (0,2,1); a bare .tcta or .tclose is (0,1,0)
+   and loses. Every colour rule here is scoped to .solo.navy or it
+   silently renders in the navy body colour. */
+.tsec .inner{max-width:1180px}
+.solo.navy .tsub{text-align:center;font-size:clamp(17px,2vw,20px);color:#f0ecf8;margin:0 0 6px}
+.tcols{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:44px 0 0;text-align:left;
+  align-items:start}
+/* the side inset MUST be margin, not padding: as padding the border spans the
+   whole grid cell and the two headers' borders touch, reading as one rule
+   across the section. As margin the border stops 46px short on each side, so
+   the two hairlines stay separate with a 92px gap between them. */
+.thead{font-family:Cinzel;font-weight:500;letter-spacing:.13em;text-transform:uppercase;
+  font-size:19.5px;margin:0 46px;padding:0 0 15px;
+  border-bottom:1px solid rgba(254,203,62,.28)}
+.solo.navy .titem{position:relative;padding:19px 46px 19px 72px;font-size:16.5px;
+  line-height:1.62;text-wrap:pretty}
+.titem::before{content:"";position:absolute;left:46px;top:29px;width:7px;height:7px;
+  transform:rotate(45deg)}
+.solo.navy .thead.tbefore{color:rgba(254,203,62,.62)}
+.solo.navy .titem.tbefore{color:#a9a6bd}
+.titem.tbefore::before{border:1px solid rgba(169,166,189,.65)}
+.solo.navy .thead.tafter{color:var(--gold-bright)}
+.solo.navy .titem.tafter{color:#f4f1fb;font-weight:500}
+.titem.tafter::before{background:var(--gold-bright)}
+.solo.navy .tclose{max-width:78ch;margin:46px auto 0;text-align:center;color:#e6e2f0}
+.solo.navy .tcta{font-family:Cinzel;font-weight:500;letter-spacing:.06em;text-align:center;
+  color:var(--gold-bright);font-size:clamp(18px,2.2vw,23px);margin:22px 0 0}
+
+/* ── header nav menu ─────────────────────────────────────────────
+   The bar is a flex row; the toggle sits to the right of the CTA and
+   the panel is absolutely positioned off the header, so opening it
+   never reflows the bar. */
+.site .bar{position:relative}
+.mtog{width:44px;height:44px;flex:0 0 auto;margin-left:16px;background:none;
+  border:0;cursor:pointer;padding:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.mtog span{display:block;width:24px;height:1.5px;background:var(--ink);
+  transition:transform .22s,opacity .18s}
+.mtog.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.mtog.is-open span:nth-child(2){opacity:0}
+.mtog.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+/* space-between was spreading brand | CTA | toggle across the whole bar.
+   margin-left:auto puts the gap on the brand's side so the CTA and the
+   toggle sit together on the right. */
+.site .bar .btn-ghost{margin-left:auto}
+.mnav{position:absolute;top:calc(100% + 14px);right:30px;z-index:60;min-width:248px;
+  background:#fdfbf6;border:1px solid rgba(176,132,43,.42);border-radius:10px;
+  box-shadow:0 28px 64px -26px rgba(29,26,21,.5);padding:14px 0;
+  display:flex;flex-direction:column}
+.mnav[hidden]{display:none}
+.mnav a{font-family:Raleway,-apple-system,Segoe UI,Roboto,sans-serif;font-weight:500;
+  letter-spacing:.12em;text-transform:uppercase;font-size:11.5px;color:var(--ink);
+  text-decoration:none;padding:9px 26px;transition:background .16s,color .16s}
+.mnav a:hover{background:var(--parch-2);color:var(--gold)}
+.mnav-cta{color:var(--gold) !important;border-top:1px solid rgba(176,132,43,.42);
+  margin-top:8px;padding-top:15px !important}
+/* the sticky header would otherwise cover the top of every jump target */
+section[id]{scroll-margin-top:104px}
+
+@media (max-width:820px){
+  .tcols{grid-template-columns:1fr;margin-top:34px}
+  .cbr{display:none}
+  /* order sorts the groups but keeps DOM order inside each, so the interleaved
+     pairs unstack cleanly: all six "walks in", then all six "emerges" */
+  .tcols > .tbefore{order:1}
+  .tcols > .tafter{order:2}
+  .thead{margin:0;padding:0 0 15px;font-size:17px}
+  .thead.tafter{margin-top:40px}
+  .solo.navy .titem{padding:15px 0 15px 24px;font-size:16px}
+  .titem::before{left:0;top:25px}
+}
+@media (max-width:640px){
+  .mtog{width:40px;height:40px;margin-left:12px}
+  .mtog span{width:21px}
+  .mnav{min-width:0;left:14px;right:14px;border-radius:8px}
+  .mnav a{padding:9px 24px;font-size:11.5px}
+  section[id]{scroll-margin-top:84px}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUILD 68 — mobile header collision + narrower menu tray
+   ═══════════════════════════════════════════════════════════════ */
+
+/* The header CTA is white-space:nowrap and cannot shrink, so on a phone it
+   overran the wordmark. Two lines makes it narrow enough to coexist, and
+   min-width:0 lets the brand actually give way instead of overflowing.
+   The <br> carries its own trailing space so the desktop string stays
+   "Reserve Your Place" when the rule hides it. */
+.hbr{display:none}
+.site .bar .brand{min-width:0}
+@media (max-width:640px){
+  .hbr{display:inline}
+  .site .btn{line-height:1.25;padding:8px 14px;text-align:center}
+  .brand .wm{font-size:15px;line-height:1.12}
+  .brand{gap:10px}
+  /* tray was left:14px right:14px = full bleed. Right-anchored and fixed
+     width instead: 240px against the 374px it was, a 36% reduction.
+     Floor is the longest item, EVERYTHING YOU RECEIVE at 184px, plus
+     24px padding a side = 232px. 240 leaves 8px. */
+  .mnav{min-width:240px;left:auto;right:14px;border-radius:8px}
+  /* the CTA has margin-left:auto, so it sits as far right as the bar's own
+     right padding allows. Cutting that padding from 16px to 4px slides the
+     CTA and the toggle 12px right and hands those 12px to the wordmark. */
+  .site .bar{padding-right:4px}
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   BUILD 72 — An Awakened Man's Compass
+   Between the Roadmap (duo rev tint) and the archetypes (solo wide).
+   Blue rather than parchment: it is the only map on the page, and the
+   third ground is what keeps it from merging with its neighbours. The
+   gradient lifts like the landing page's quiz so the blue is never a
+   flat slab; gold hairlines bound it top and bottom.
+   Contrast measured on the ramp: gold 9.3:1, intro 12.1:1,
+   grid subheads 7.2:1, closing 6.7:1, credit 4.9:1.
+   ══════════════════════════════════════════════════════════════════ */
+.compass-s{background:linear-gradient(180deg,
+  #101a52 0%, #182260 22%, #212c76 46%, #2c3a8d 72%, #3b4da2 100%);
+  padding:var(--pad-y) 0;
+  border-top:1px solid rgba(254,203,62,.26);
+  border-bottom:1px solid rgba(254,203,62,.26)}
+.cs-inner{max-width:1100px;margin:0 auto;padding:0 28px}
+.cs-top{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4vw,58px);align-items:center}
+.cs-copy .lead-in{margin:0 0 12px;color:var(--gold-bright)}
+.cs-copy h2{text-align:left;margin:0;color:var(--gold-bright)}
+.cs-copy .crule{margin:20px 0 24px;background:var(--gold-bright);opacity:.9}
+.cs-intro{font-size:16.5px;line-height:1.76;color:#e9edf9;margin:0}
+.cs-art{margin:0;position:relative}
+.cs-art img{width:108%;max-width:108%;height:auto;display:block;margin-left:-4%}
+/* credit clears the circle entirely: below the artwork, flush with the
+   image's right edge (-4% cancels the image's right overhang). The grid's
+   own top margin keeps it well clear of the column-2 text beneath. */
+.cs-cr{margin:14px -4% 0 0;text-align:right;font-family:Raleway;font-weight:400;
+  font-size:10.5px;line-height:1.5;letter-spacing:.02em;color:#aab4d8}
+.cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 48px;margin:clamp(40px,4.6vw,64px) 0 0}
+.cs-item{position:relative;padding-left:22px}
+.cs-item::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;
+  transform:rotate(45deg);background:var(--gold-bright)}
+.cs-item h3{font-family:Cinzel;font-weight:500;letter-spacing:.02em;font-size:18px;
+  line-height:1.26;color:var(--gold-bright);margin:0 0 6px;text-wrap:pretty}
+.cs-item p{font-size:15.5px;line-height:1.62;color:#dfe5f5;margin:0;text-wrap:pretty}
+.cs-close{max-width:74ch;margin:clamp(40px,4.4vw,58px) auto 0;text-align:center;
+  font-size:17px;line-height:1.72;color:#eef1fb}
+
+@media (max-width:900px){
+  .cs-top{grid-template-columns:1fr;gap:26px}
+  .cs-copy h2{text-align:center}
+  .cs-copy .crule{margin-left:auto;margin-right:auto}
+  .cs-intro{text-align:center}
+  .cs-art{max-width:460px;margin:0 auto;order:-1}
+  .cs-art img{width:100%;max-width:100%;margin-left:0}
+  .cs-cr{margin:12px 0 0;text-align:center}
+  .cs-grid{grid-template-columns:1fr;gap:22px}
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   WE, WOMEN OF LIGHT — colour + component layer  (build 1, 2026.09.23)
+   Everything above this line is the NME sheet, unchanged, so every fix
+   from NME builds 1-72 carries over. Everything below re-points it to
+   the WWOL landing page standard: white ground, ocean navy, gold.
+   Source of the tokens: /women/index.html :root.
+   ═══════════════════════════════════════════════════════════════════ */
+:root{
+  --parch:#fdfdfd; --parch-2:#fdfdfd;          /* both white = landing as-is */
+  --ocean:linear-gradient(180deg,#011d34 0%,#043f68 58%,#0a5f92 100%);
+  --ocean-glow:radial-gradient(96% 74% at 50% 34%,#0a5f92 0%,#075283 26%,#043f68 50%,#022a4a 78%,#011d34 100%);
+  --ocean-foot:radial-gradient(90% 66% at 50% 104%,rgba(254,203,62,.30) 0%,rgba(254,203,62,0) 62%),linear-gradient(180deg,#011d34 0%,#054b76 100%);
+  --band-text:#f3efe6;
+}
+body{background:var(--parch)}
+.site{background:rgba(253,253,253,.95)}
+.mnav{background:#fff}
+.mnav a:hover{background:#f4f1ea}
+
+/* ── CTA: the landing page button (flat gold, white label). The animated
+      NME gradient is switched off. Palette options live in the review file. */
+.btn-solid,.btn-anim,.pcard__btn{background-image:none;background-color:var(--gold);
+  animation:none;color:#fff;text-shadow:none}
+.btn-solid:hover,.btn-anim:hover,.pcard:hover .pcard__btn{background-image:none;
+  background-color:#96701f;filter:none}
+.btn-ghost{border-color:var(--gold)}
+.btn-ghost:hover{background-image:none;background-color:var(--gold);color:#fff;
+  animation:none;border-color:var(--gold)}
+
+/* ── cards and boxes that were cream on parchment → white on white ── */
+.pcard,.price-ref,.guarantee-box,.closed-note,.tz .r{background:#fff}
+.solo.lum{background:var(--parch)}
+.solo.lum .tz .r{background:#fff}
+
+/* ── the navy family: indigo → the landing's ocean navy ───────────── */
+.solo.navy{background:var(--ocean-glow);border-top:1px solid rgba(254,203,62,.24);
+  border-bottom:1px solid rgba(254,203,62,.24)}
+.solo.navy p,.solo.navy li{color:#eef2f7}
+.solo.navy .lead-in,.solo.navy .lead-in b{color:#f6f3ec}
+.solo.navy .titem.tbefore{color:#b9c8d8}
+.titem.tbefore::before{border-color:rgba(185,200,216,.7)}
+.solo.navy .titem.tafter{color:#fff}
+.solo.navy .tclose,.solo.navy .tclose b{color:#eef2f7}
+.beat{background:radial-gradient(88% 72% at 50% 42%,#0c69a0 0%,#0a5f92 22%,#064a78 44%,
+  #03304f 74%,#011a2e 100%)}
+.beat:before{background:radial-gradient(52% 40% at 50% 44%,rgba(140,200,255,.10) 0%,
+  rgba(140,200,255,0) 72%)}
+.beat figcaption{color:#b9c8d8}
+.compass-s{background:var(--ocean)}
+.cs-item p,.cs-item li{color:#e3ebf3}
+.cs-cr{color:#b9c8d8}
+@media (max-width:900px){
+  .s-hero__inner{background:var(--ocean)}
+  .psec.tall>.overlay{background:var(--ocean-glow)}
+}
+
+/* ── footer: the landing page footer (ocean with the gold rise) ────── */
+footer{background:var(--ocean-foot);color:var(--band-text);border-top:0}
+footer .hp{color:var(--gold-bright);border:1px solid rgba(255,255,255,.22);
+  border-radius:2px;padding:7px 15px;margin:0 0 4px}
+footer .social a{border-color:rgba(255,255,255,.22)}
+footer .social svg{fill:var(--band-text)}
+footer .social a:hover{border-color:var(--gold-bright);background:rgba(254,203,62,.08)}
+footer .social a:hover svg{fill:var(--gold-bright)}
+footer .legal a,footer .foot-progs a,footer .foot-mail a{color:var(--band-text)}
+footer .legal a:hover,footer .foot-progs a:hover,footer .foot-mail a:hover{border-color:var(--gold-bright)}
+footer .foot-progs span,footer .legal span{color:rgba(243,239,230,.55)}
+footer .copy-line{color:rgba(243,239,230,.72)}
+
+/* ── header: wordmark stacks on a phone, and the bar gets the height for it ── */
+.brand .wm .mbr{display:none}
+@media (max-width:640px){
+  .brand .wm .mbr{display:inline}
+  .site .bar{padding-top:14px;padding-bottom:14px}
+  .brand .wm{font-size:16px;line-height:1.15}
+}
+
+/* ── hero: the NME offsets were tuned to Iana on the rock in the NME photo.
+      Reset to zero; this photograph is tuned on its own numbers below. ── */
+.hero-sky{top:var(--wwol-sky,0px)}
+:root{--hero-cta-drop:0px}
+@media (max-width:900px){.hero-sky{top:0}}
+
+/* ── S4 · statistics: source line + citation accordion ───────────── */
+.src-line{font-size:9px;line-height:1.5;color:var(--muted);margin:-14px 0 24px;
+  max-width:54ch}
+.cites{margin:30px 0 0;border-top:1px solid var(--line);max-width:54ch}
+.cite{border-bottom:1px solid var(--line)}
+.cite summary{list-style:none;cursor:pointer;position:relative;padding:12px 34px 12px 0;
+  font-family:Raleway;font-weight:600;font-size:14px;line-height:1.45;color:var(--ink)}
+.cite summary::-webkit-details-marker{display:none}
+.cite summary:after{content:"+";position:absolute;right:4px;top:8px;font-family:Raleway;
+  font-weight:400;font-size:21px;color:var(--gold)}
+.cite[open] summary:after{content:"\2212"}
+.cite .cite__a{padding:0 34px 14px 0;font-size:13.5px;line-height:1.6;color:var(--body)}
+.cite .cite__a p{font-size:13.5px;margin:0}
+.cite .cite__a a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;
+  word-break:break-word}
+.cites-lbl{font-family:Cinzel;font-weight:500;font-size:13px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);margin:0;padding:14px 0 4px}
+
+/* ── S8 · the beat as a split: questions on ocean, words over the photograph ── */
+.duo.beat-duo>.txt{background:radial-gradient(110% 80% at 40% 40%,#0a5f92 0%,#064a78 40%,
+  #022c4c 76%,#011d34 100%)}
+.beat-q{margin:0;font-family:Cinzel;font-weight:400;color:#ffd764;
+  font-size:clamp(19px,2.1vw,27px);line-height:1.4;display:flex;flex-direction:column;
+  gap:clamp(14px,1.8vw,24px)}
+.beat-q span{display:block;text-shadow:0 1px 0 rgba(0,0,0,.35),0 0 34px rgba(255,215,100,.2)}
+.beat-cap{font-family:Cinzel;font-weight:500;font-size:13px;letter-spacing:.22em;
+  text-transform:uppercase;color:#b9c8d8;margin:28px 0 0}
+.pic-ov.strong{background:linear-gradient(180deg,rgba(0,0,0,.30),rgba(0,0,0,.46))}
+/* 8-B: the word field set as type on white, beside the photograph */
+.wordfield{display:flex;flex-direction:column;align-items:center;gap:6px;margin:0;
+  text-align:center}
+.wordfield span{font-family:Cinzel;font-weight:400;font-size:clamp(16px,1.6vw,21px);
+  letter-spacing:.04em;color:var(--body)}
+.wordfield span:last-child{color:var(--gold);margin-top:6px}
+
+/* ── S9 · full-width image band ───────────────────────────────────── */
+.band{position:relative;height:clamp(240px,30vw,470px);overflow:hidden;background:#cfc8e4}
+.band img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+
+/* ── S13 · the constellation: four bullets under each power ───────── */
+.cs-item ul{list-style:none;margin:10px 0 0;padding:0}
+.cs-item li{position:relative;padding:3px 0 3px 15px;font-size:14.5px;line-height:1.5}
+.cs-item li:before{content:"";position:absolute;left:1px;top:11px;width:5px;height:5px;
+  border:1px solid var(--gold-bright);transform:rotate(45deg)}
+.cs-close b{color:#fff;display:block;margin:0 0 10px;font-family:Cinzel;font-weight:500;
+  font-size:clamp(18px,2vw,22px);color:var(--gold-bright)}
+.cs-art img{border-radius:50%}
+
+/* ── S14 · three closing lines ─────────────────────────────────────── */
+.cream-close.cc-tight{margin-top:14px}
+
+/* ── S23 · Athena holds the testimonials ──────────────────────────────
+   The statue is screened onto ocean navy: screen blending drops the black
+   studio ground out entirely, so only the marble remains, lit from within.
+   She runs the full height of the section behind a translucent plate.  */
+.psec.athena{background:radial-gradient(64% 58% at 50% 42%,#0a5f92 0%,#075283 30%,
+  #033358 62%,#011d34 100%)}
+.psec.athena>.media{position:absolute;inset:0;grid-area:auto;display:flex;
+  justify-content:center;pointer-events:none}
+.psec.athena>.media img{width:auto;height:100%;max-width:none;object-fit:contain;
+  mix-blend-mode:screen;opacity:.58}
+.psec.athena>.scrim{display:none}
+.psec.athena>.overlay{grid-area:1/1;padding:clamp(170px,19vw,330px) 7vw 9vh}
+.psec.athena .plate-box{background:rgba(1,26,46,.60);backdrop-filter:none;
+  -webkit-backdrop-filter:none;border-color:rgba(254,203,62,.30)}
+/* variant B — the statue carries more of the frame */
+.psec.athena.v-b>.media img{opacity:.95;filter:brightness(1.12) contrast(1.05)}
+.psec.athena.v-b .plate-box{background:rgba(1,26,46,.44)}
+@media (max-width:900px){
+  .psec.athena>.overlay{padding:150px 18px 48px}
+}
+
+/* ═══ build 1 · review fixes ═══════════════════════════════════════ */
+/* hero — the sky was extended 440px (as NME's was) so every line of copy
+   sits above Iana's raised hands; only the button stands on the rock,
+   below her feet. Sizes here are the WWOL hero's own, not NME's. */
+.hero-sky .s-hero__sub{max-width:64ch;font-size:clamp(15px,1.4vw,20px);line-height:1.45;
+  margin:clamp(10px,1.1vw,18px) auto 6px}
+.hero-sky .s-hero__with{font-size:clamp(12px,1.05vw,15px);margin:4px auto 0;color:#e9e2d2}
+.s-hero__inner{padding-top:clamp(22px,2.6vw,48px)}
+.s-hero .kicker{margin:0 0 12px}
+@media (max-width:900px){
+  .hero-sky .s-hero__sub{font-size:17px;max-width:none}
+  .hero-sky .s-hero__with{font-size:13px;margin:6px auto 20px}
+}
+/* bold inside the ocean sections inherits the section's light text */
+.compass-s b,.solo.navy b,.beat b{color:inherit}
+.solo.navy .tsub b{color:var(--gold-bright)}
+/* the rule under "Invest In Your Self" centres like every other solo rule */
+.s-invest .crule{margin-left:auto;margin-right:auto}
+.s-invest h2{margin-bottom:0}
+/* 8-A — seventeen words in two columns over the photograph, no NME offset */
+@media (min-width:901px){
+  .beat-duo .pic-ov .pemotions{position:static;top:auto;display:grid;
+    grid-template-columns:1fr 1fr;gap:10px 28px;justify-items:center;max-width:460px}
+  .beat-duo .pic-ov .pemotions span{font-size:clamp(15px,1.35vw,19px)}
+  .beat-duo .pic-ov .pemotions span:last-child{grid-column:1/-1}
+}
+.s-hero__inner{align-self:stretch}
+.hero-sky .s-hero__with{max-width:none}
+.s-hero__inner{padding-bottom:clamp(10px,1.3vw,22px)}
+.hero-sky .s-hero__sub{text-wrap:balance}
+.invest-note{text-wrap:balance}
+/* phone: the wordmark is exactly two lines, never three */
+.brand .wm .wl{white-space:nowrap}
+/* phone: crop the added sky back off — it only earns its place on desktop,
+   where the headline sits in it */
+@media (max-width:900px){
+  .s-hero__media img{aspect-ratio:3456/1798;object-fit:cover;object-position:50% 100%;height:auto}
+}
+/* AA on the lightest ocean stop (#0a5f92 / #0c69a0): #b9c8d8 measured 4.02 — raised */
+.solo.navy .titem.tbefore,.beat figcaption,.beat-cap,.cs-cr{color:#d3dde8}
+.titem.tbefore::before{border-color:rgba(211,221,232,.75)}
+
+/* ═══════════════════════════════════════════════════════════════════
+   BUILD 2 — 2026.09.24 · Marc's review of build 1
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── grounds, taken from feminineaxis.com (read from its live stylesheet):
+      blush runs white → #F9E3DE / #FCF3F1 → #F0D7CE as a vertical gradient,
+      wine is a radial glow #7E2A3E → #5A1E2C → #380F1A, merlot closes.
+      Ocean stays for the quotes and the long full-width sections.        */
+:root{
+  --rose:linear-gradient(180deg,#fcf3f1 0%,#f6e3dd 45%,#f0d7ce 100%);
+  --rose-soft:linear-gradient(180deg,#ffffff 0%,#f9e3de 38%,#f8eae5 100%);
+  --rose-deep:linear-gradient(180deg,#f3ddd5 0%,#eccac0 100%);
+  --wine:radial-gradient(120% 100% at 50% 32%,#7e2a3e 0%,#5a1e2c 48%,#380f1a 100%);
+  --merlot:linear-gradient(170deg,#54202a 0%,#481b24 50%,#3c1620 100%);
+  /* PROPOSED TOKENS — gold on blush. #b0842b measures 2.2–2.8:1 on these
+     grounds, under even the 3:1 large-text floor. */
+  --gold-on-rose:#8a6420;   /* headings  — 3.5:1 or better on every blush stop */
+  --bronze:#7a5514;         /* small gold text — 4.5:1+ */
+}
+.duo.tint,.solo.tint{background:var(--rose)}
+.duo.tint>.txt{background:var(--rose)}
+.tint h2,.rose-deep h2,.tint .crule{color:var(--gold-on-rose)}
+.tint .crule,.rose-deep .crule{background:var(--gold-on-rose)}
+.tint h3,.tint .pq figcaption,.tint .vval,.tint .faq summary:after,.tint .cite summary:after,
+.rose-deep .countdown,.rose-deep .s-emph{color:var(--bronze)}
+.tint .lead-in,.rose-deep .s-line,.rose-deep .price-ref{color:#5e564b}
+.tint .pq{border-top-color:var(--gold-on-rose)}
+
+/* header — the real logo (from the live site) and a gold wordmark */
+.brand .wm{color:var(--gold)}
+
+/* ── every split section: the headline may use the full text panel; the
+      reading measure (54ch) now governs the copy only ─────────────────── */
+@media (min-width:901px){
+  .duo>.txt>.inner{max-width:none}
+  .duo>.txt>.inner>*:not(h2):not(hr){max-width:54ch}
+  .duo>.txt{container-type:inline-size}
+  /* headlines Marc broke at a set word: each line holds, size follows the panel.
+     --k = the line's width at 1px of Cinzel 500, measured in build 2 */
+  .duo>.txt>.inner>h2.hfit{max-width:none;
+    font-size:min(clamp(25px,3.1vw,40px),calc((100cqw - 2 * var(--pad-x)) / var(--k)))}
+  .duo>.txt>.inner>h2.hfit>span{display:block;white-space:nowrap}
+}
+
+/* ── whole-photograph panels ("pull back / don't crop"): the picture keeps its
+      own proportions and travels with the reader through a long text column ── */
+.duo.fit>.pic{background:transparent;min-height:0;max-height:none;overflow:visible}
+.duo.fit>.pic img{position:sticky;top:104px;inset:auto;width:100%;height:auto;object-fit:contain}
+@media (max-width:900px){
+  .duo.fit>.pic img{position:static}
+}
+
+/* ── S4 · the source line sits with the citations, under "Sources" ── */
+.cites .src-line{margin:0 0 6px;max-width:none}
+
+/* ── Iana's quotes on their own ocean band (after S4, after S12) ── */
+.beat.qband{padding-top:clamp(56px,8vh,96px);padding-bottom:clamp(56px,8vh,96px)}
+.beat.qband blockquote{font-size:clamp(20px,2.4vw,31px);max-width:900px;font-style:normal}
+
+/* ── S5 · video on wine ── */
+.solo.wine{background:var(--wine);border:0}
+.solo.wine h2{color:var(--gold-bright)}
+.solo.wine .crule{background:var(--gold-bright)}
+.solo.wine .lead-in,.solo.wine .video-note{color:#efe3dc}
+.solo.wine .cream-video{border-color:#c9a85c}
+
+/* ── S8 · headline over the word field ── */
+.beat-words h2{text-align:center;margin:0 auto}
+.beat-words .crule{margin:22px auto 26px}
+.beat-words .inner{text-align:center}
+
+/* ── S13 · the circle stands on its own gold ring — no white ground ── */
+.cs-art img{border-radius:0}
+.compass-s .cs-close b{color:var(--gold-bright)}
+
+/* ── S14 · first closing line in gold ── */
+.cream-close.gold,.cream-close.gold b{color:var(--gold)}
+.tint .cream-close.gold,.tint .cream-close.gold b{color:var(--gold-on-rose)}
+
+/* ── S19 · two measured columns: every bullet on one line ≥1140px ── */
+@media (min-width:1100px){
+  .solo.wide:has(.cream-bullets.split)>.inner{max-width:1120px}
+  .cream-bullets.split{columns:auto;display:grid;grid-auto-flow:column;
+    grid-template-rows:repeat(8,auto);grid-template-columns:max-content max-content;
+    justify-content:center;column-gap:44px;max-width:none}
+  .cream-bullets.split li{white-space:nowrap}
+}
+
+/* ── S25 pricing on deep blush; S26 schedule on ocean; S32 on merlot ── */
+.s-invest.rose-deep{background:var(--rose-deep)}
+.solo.ocean{background:var(--ocean-glow);border:0}
+.solo.ocean h2{color:var(--gold-bright)}
+.solo.ocean .crule{background:var(--gold-bright)}
+.solo.ocean .lead-in{color:#eef2f7}
+.solo.ocean .dates,.solo.ocean .dates b{color:var(--gold-bright)}
+.solo.ocean .tz .r{background:rgba(255,255,255,.08);border-color:rgba(254,203,62,.35)}
+.solo.ocean .tz .g{color:#fff}.solo.ocean .tz .t{color:var(--gold-bright)}
+.solo.ocean .tz-note{color:#dfe7ef}.solo.ocean .tz-note a{color:var(--gold-bright)}
+.solo.merlot{background:var(--merlot);border:0}
+.solo.merlot h2{color:var(--gold-bright)}
+.solo.merlot .guarantee-box{background:rgba(255,255,255,.04);border-color:#c9a85c}
+.solo.merlot .guarantee-box p,.solo.merlot .guarantee-box b{color:#f5f0e8}
+
+/* ── S30 · the words move up into the sky; she stands alone on the peak ──
+      The section takes the photograph's own proportions (no crop), and the
+      copy sits in the top third, above her helmet (~35% down the frame). */
+@media (min-width:901px){
+  .psec.tall{min-height:0;aspect-ratio:4777/3174}
+  .psec.tall>.media img{object-position:50% 0%}
+  .psec.tall>.scrim{background:linear-gradient(180deg,rgba(6,7,9,.50) 0%,rgba(6,7,9,.22) 30%,rgba(6,7,9,0) 42%)}
+  .psec.tall>.overlay{min-height:0;align-items:flex-start;
+    padding:clamp(20px,2.4vw,40px) 6vw 0}
+  .psec.tall .p-in h2,.psec.tall .p-in p:first-of-type,.psec.tall .p-in .p-cta{position:static;top:auto;margin-top:0}
+  .psec.tall .p-in h2{font-size:clamp(24px,2.6vw,38px)}
+  .psec.tall .p-in p:first-of-type{margin:12px auto 0;font-size:clamp(14.5px,1.25vw,18px);max-width:70ch;line-height:1.6}
+  .psec.tall .p-in .p-cta{margin:clamp(12px,1.3vw,20px) 0 0}
+}
+
+/* ── thank-you page: blush deepening to wine, footer included ── */
+.ty-head{background:var(--rose-soft)}
+.ty-steps{background:linear-gradient(180deg,#f8eae5 0%,#f0d7ce 55%,#e6bcb0 100%)}
+.ty-steps h2{color:var(--gold-on-rose)}.ty-steps .crule{background:var(--gold-on-rose)}
+.ty-steps h3{color:var(--bronze)}
+.ty-cal{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ty-cal .lbl{font-size:14px;color:#5e564b;margin-right:4px}
+.ty-cal a{font:600 11px Raleway;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;
+  color:var(--bronze);border:1px solid var(--gold-on-rose);border-radius:2px;padding:8px 14px}
+.ty-cal a:hover{background:var(--gold-on-rose);color:#fff}
+.ty-q{margin:56px auto 0;text-align:center}
+.ty-q .q{font-family:Cinzel;font-weight:500;font-size:clamp(18px,2vw,22px);color:var(--gold-on-rose);margin:0 0 18px}
+.ty-q a{font-size:17px;color:var(--ink)}
+.ty-page footer{background:var(--wine)}
+
+/* build 2 · swap — pricing on wine (clearest separation), video on deep blush */
+:root{--rose-deep:linear-gradient(180deg,#f8eae5 0%,#f0d7ce 100%)}
+.solo.rose-deep{background:var(--rose-deep);border:0}
+.solo.rose-deep h2{color:var(--gold-on-rose)}
+.solo.rose-deep .lead-in,.solo.rose-deep .video-note{color:#5e564b}
+.solo.rose-deep .cream-video{border-color:var(--gold-on-rose)}
+.s-invest.wine{background:var(--wine);border:0}
+.s-invest.wine h2,.s-invest.wine .s-emph,.s-invest.wine .countdown{color:var(--gold-bright)}
+.s-invest.wine .crule{background:var(--gold-bright)}
+.s-invest.wine .s-line{color:#efe3dc}
+.s-invest.wine .invest-note{color:#f5f0e8}
+.s-invest.wine .pcard{border-color:#c9a85c}
+.s-invest.wine .price-ref{background:#fff;border-color:#c9a85c}
+.s-invest.wine .closed-note{background:#fff}
+
+/* build 2 · fixes after measurement
+   cqw is measured on the panel's content box, which already excludes the
+   padding — build 2's first pass subtracted it twice and ran 8px small. */
+@media (min-width:901px){
+  .duo>.txt>.inner>h2.hfit{font-size:min(clamp(25px,3.1vw,40px),calc(100cqw / var(--k)))}
+  /* whole-photograph panels settle in the middle of the screen while the
+     copy beside them scrolls; --ar is the photograph's own ratio */
+  .duo.fit>.pic img{top:max(104px,calc(52vh - 25vw / var(--ar,1.5)))}
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   BUILD 3 — 2026.09.24 · blush replaced by a graded deep wine
+   Every section that alternated to blush now carries the wine gradient,
+   light at the top and deepening down the section. Text on it is light;
+   the lightest stop (#8c3b50) holds body 5.5:1, gold headings 4.8:1.
+   ═══════════════════════════════════════════════════════════════════ */
+:root{--wine-grad:linear-gradient(180deg,#8c3b50 0%,#6e2a3e 45%,#4a1a28 100%)}
+.duo.tint,.solo.tint,.duo.tint>.txt,.solo.winegrad{background:var(--wine-grad);border:0}
+.tint p,.tint li,.tint .lead-in,.tint .lead-in b,.tint blockquote,.tint .vitem,.tint .faq__a p,
+.winegrad p,.winegrad .lead-in,.winegrad .video-note{color:#eadcd6}
+.tint b{color:#fff}
+.tint h2,.winegrad h2{color:var(--gold-bright)}
+.tint .crule,.winegrad .crule{background:var(--gold-bright)}
+.tint h3,.tint .pq figcaption,.tint .vval,.tint .filter-cols h3{color:#f1d58f}
+.tint .faq summary{color:#f5f0e8}
+.tint .faq summary:after,.tint .cite summary:after{color:var(--gold-bright)}
+.tint .faq{border-color:rgba(255,255,255,.18)}
+.tint .cream-close,.tint .cream-close b{color:#f5f0e8}
+.tint .cream-close.gold,.tint .cream-close.gold b{color:var(--gold-bright)}
+.tint .pq{border-top-color:rgba(254,203,62,.55)}
+.tint .plist li:before,.tint .s-list li:before,.tint .cream-bullets li:before,
+.tint .filter-cols .fl li:before{background:var(--gold-bright)}
+.tint .outcomes .o{border-color:rgba(255,255,255,.15)}
+.tint a{color:inherit}
+.tint .btn-ghost{color:#fff}
+.winegrad .cream-video{border-color:#c9a85c}
+
+/* ── S4 · the photograph fills its panel and stays put ── */
+/* ── S4 · every reference behind one "Sources +" line ── */
+.cite-all{margin:26px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:54ch}
+.cite-all summary{list-style:none;cursor:pointer;position:relative;padding:12px 34px 12px 0;
+  font-family:Cinzel;font-weight:500;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cite-all summary::-webkit-details-marker{display:none}
+.cite-all summary:after{content:"+";position:absolute;right:4px;top:6px;font-family:Raleway;
+  font-weight:400;font-size:22px;letter-spacing:0;color:var(--gold)}
+.cite-all[open] summary:after{content:"\2212"}
+.cite-all__a{padding:0 0 16px}
+.cite-all .src-line{font-size:9px;line-height:1.5;color:var(--muted);margin:0 0 12px}
+.cite-one{font-size:13px;line-height:1.6;color:var(--body);margin:0 0 10px}
+.cite-one b{font-weight:600}
+.cite-one a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;word-break:break-word}
+
+/* ── Iana quote bands: 56px more air top and bottom, a narrower measure ── */
+.beat.qband.airy{padding-top:calc(clamp(56px,8vh,96px) + 56px);padding-bottom:calc(clamp(56px,8vh,96px) + 56px)}
+.beat.qband.airy blockquote{max-width:820px;line-height:1.52}
+.beat.qband.airy figcaption{margin-top:34px}
+/* S12's band grades down into the constellation's own top colour (#011d34),
+   so the two read as one field; the gold hairline between them stays */
+.beat.qband.to-compass{background:linear-gradient(180deg,#0a5f92 0%,#075283 30%,#043f68 60%,#011d34 100%);
+  border-bottom:1px solid rgba(254,203,62,.30)}
+.beat.qband.to-compass:before{background:radial-gradient(52% 40% at 50% 38%,rgba(140,200,255,.10) 0%,rgba(140,200,255,0) 72%)}
+.beat.qband.to-compass + .compass-s{border-top:0}
+
+/* ── S8 · Create New Resonance / Breakthrough / the word field ── */
+.beat-words .wf-sub{text-align:center;font-family:Cinzel;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;font-size:clamp(16px,1.5vw,20px);color:var(--gold);margin:0 0 20px}
+.beat-words .wordfield{gap:4px}
+.beat-words .wordfield span{font-size:clamp(15px,1.35vw,19px)}
+.beat-words .wordfield span:last-child{color:var(--body);margin-top:0}
+
+/* ── S9 · the underwater photograph whole: water's surface to her feet ── */
+.band.full{height:auto;aspect-ratio:5900/3418}
+.band.full img{object-position:50% 50%}
+
+/* ── thank-you page: from a whisper of wine under the header to the wine footer ── */
+.ty-head{background:linear-gradient(180deg,#fbf4f5 0%,#f5e6ea 100%)}
+.ty-steps{background:linear-gradient(180deg,#f5e6ea 0%,#ecd3da 45%,#dcb1bd 70%,#b56f84 86%,#8c3b50 100%);
+  padding-bottom:calc(var(--pad-y) + 150px)}
+.ty-page footer{background:linear-gradient(180deg,#8c3b50 0%,#6e2a3e 45%,#4a1a28 100%)}
+
+/* ═══════════════════════════════════════════════════════════════════
+   BUILD 4 — 2026.09.27
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Brunello: deep garnet, a luminous core that lifts ever so slightly in
+      the middle, deepening to near-black wine at the edges. Less purple
+      than build 3's gradient; the pricing section was the model. ── */
+:root{
+  --brunello-core:radial-gradient(46% 40% at 50% 44%,rgba(255,222,184,.11) 0%,rgba(255,222,184,0) 72%);
+  --brunello-base:radial-gradient(ellipse 88% 72% at 50% 46%,#8a2638 0%,#6c1a2b 32%,#4d0f1f 64%,#330914 100%);
+}
+.solo.tint,.solo.brunello,.s-invest.wine{background:var(--brunello-core),var(--brunello-base);border:0}
+.solo.brunello h2{color:var(--gold-bright)}
+.solo.brunello .crule{background:var(--gold-bright)}
+.solo.brunello .lead-in,.solo.brunello .video-note{color:#eadcd6}
+/* the video emanates a faint whitish-gold light */
+.solo.brunello .cream-video{border-color:rgba(236,210,150,.85);
+  box-shadow:0 0 0 1px rgba(255,238,200,.25),0 0 46px 8px rgba(255,236,196,.16),0 0 130px 36px rgba(254,214,140,.09)}
+.s-invest.wine .pcard{box-shadow:0 0 34px rgba(255,230,190,.10)}
+
+/* ── the six split sections go back to white, their text back to dark ── */
+.duo.tint,.duo.tint>.txt{background:var(--parch)}
+.duo.tint p,.duo.tint li,.duo.tint blockquote,.duo.tint .faq__a p{color:var(--body)}
+.duo.tint b{color:var(--ink)}
+.duo.tint .lead-in{color:var(--muted)}.duo.tint .lead-in b{color:var(--ink)}
+.duo.tint h2,.duo.tint h3,.duo.tint .pq figcaption{color:var(--gold)}
+.duo.tint .crule{background:var(--gold)}
+.duo.tint .faq summary{color:var(--ink)}
+.duo.tint .faq summary:after{color:var(--gold)}
+.duo.tint .faq{border-color:var(--line)}
+.duo.tint .cream-close,.duo.tint .cream-close b{color:var(--ink)}
+.duo.tint .pq{border-top-color:var(--copper)}
+.duo.tint .plist li:before,.duo.tint .s-list li:before{background:var(--gold)}
+.duo.tint .outcomes .o{border-color:var(--line)}
+
+/* ── S22 · both lists in white ── */
+.tint .filter-cols .fl li{color:#fff}
+
+/* ── hero · the button stands under Iana, 10px left of page centre ── */
+@media (min-width:901px){.hero-rock .btn{position:relative;left:-20px}}
+
+/* ── S9 · underwater band, 3% of surface water trimmed from the top ── */
+.band.full{aspect-ratio:5900/3315}
+
+/* ── S20 · the archer whole: her own proportions, fixed at the top of
+      the panel beside the headline; no crop, no movement ── */
+@media (min-width:901px){
+  .duo.natural>.pic{align-self:start;min-height:0;background:transparent}
+  .duo.natural>.pic img{position:static;width:100%;height:auto;object-fit:contain}
+}
+
+/* ── S30 · the text block 15px lower ── */
+@media (min-width:901px){.psec.tall .p-in{position:relative;top:25px}}
+
+/* ── thank-you page · Brunello from under the header to the foot of the
+      footer: deepest at the top, easing a shade lighter at the bottom ── */
+.ty-page{background:radial-gradient(60% 34% at 50% 14%,rgba(255,222,184,.09) 0%,rgba(255,222,184,0) 70%),
+  linear-gradient(180deg,#330914 0%,#3c0b18 30%,#4a0f1d 62%,#5e1426 100%)}
+.ty-head,.ty-steps,.ty-page footer{background:transparent}
+.ty-head h1{color:#f5f0e8}
+.ty-head .kicker{color:var(--gold-bright)!important}
+.ty-head .lede{color:#eadcd6}
+.ty-steps h2{color:var(--gold-bright)}.ty-steps .crule{background:var(--gold-bright)}
+.ty-steps h3{color:#f1d58f}
+.ty-steps p{color:#eadcd6}
+.ty-steps a{color:var(--gold-bright)}
+.ty-steps .outcomes .o{border-color:rgba(255,255,255,.14)}
+.ty-cal .lbl{color:#eadcd6}
+.ty-cal a{color:var(--gold-bright);border-color:rgba(254,203,62,.6)}
+.ty-cal a:hover{background:var(--gold-bright);color:#330914}
+.ty-q .q{color:var(--gold-bright)}
+.ty-q a{color:#f5f0e8}
+.ty-steps{padding-bottom:var(--pad-y)}
+/* ── build 5 ── */
+.band.full{aspect-ratio:5900/2877}
+/* S8 · one centre line for heading, rule, sub-head and the word list */
+.beat-words .inner>*{margin-left:auto;margin-right:auto}
+.beat-words .wordfield{width:100%;max-width:none;align-items:center;padding-left:0}
+/* ── build 6 ── */
+.ty-hair{display:block;border:0;height:1px;width:75%;margin:0 auto;background:var(--gold);opacity:.85}
+.duo>.pic img[alt^="A dense cluster"]{transform:scale(1.06);transform-origin:center}
+
+/* framing overrides */
+@media (min-width:901px) and (max-width:1365px){[data-fr="wwol-20-archer-x"]{object-position:55% 50%!important}}@media (max-width:900px){[data-fr="wwol-10-iana-gold-sky"]{object-position:50% 90%!important}}</style></head><body><header class="site"><div class="bar"><a class="brand" href="/"><img src="/assets/img/brand/logo-institute-480.png" srcset="/assets/img/brand/logo-institute-480.png 1x, /assets/img/brand/logo-institute-800.png 2x" alt="Spirit Gateways Institute" width="76" height="76"><span class="wm"><span class="wl">We, Women</span><br class="mbr"> <span class="wl">of Light&trade;</span></span></a><a class="btn btn-ghost" href="/#invest">Reserve<br class="hbr"> Your Place</a></div></header><div class="ty-page"><div class="enroll-head ty-head"><div class="inner"><p class="kicker" style="color:var(--gold-on-rose)">We, Women of Light&trade;</p><h1>Your Place Is Held</h1><p class="lede">Thank you. Your enrollment is received, and your receipt is on its way to your inbox.</p></div></div><section class="solo wide ty-steps"><div class="inner"><h2>What Happens Next</h2><hr class='crule'><div class="outcomes noline"><div class="o"><h3>Watch your inbox.</h3><p>Within one business day you will receive a welcome email from <a href="mailto:wewomenoflight@ianalahi.com">wewomenoflight@ianalahi.com</a> with everything you need for the journey ahead.</p></div><div class="o"><h3>Your private 1:1 Accelerated Awakening session with Iana.</h3><p>Up to two hours, before the circle begins, so that on day one Iana already knows who is in the circle. Your welcome email includes the link to schedule it.</p></div><div class="o"><h3>Save the date.</h3><p>The opening session is Saturday, January 9, 2027 &mdash; 9 AM PT &middot; 10 AM MT &middot; 11 AM CT &middot; 12 PM ET &mdash; and runs two hours. The twelve gateway sessions follow every Saturday through April 3, ninety minutes each.</p><p class="ty-cal"><span class="lbl">Opening session, Saturday, January 9:</span><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=We%2C%20Women%20of%20Light%20%E2%80%94%20Opening%20Session&dates=20270109T090000/20270109T110000&ctz=America/Los_Angeles&details=Your%20Zoom%20link%20and%20preparation%20arrive%20in%20your%20welcome%20email%20from%20wewomenoflight%40ianalahi.com.%20Questions%3A%20wewomenoflight%40ianalahi.com&location=Online%20%28Zoom%29" target="_blank" rel="noopener">Google</a><a href="/assets/cal/wwol-opening-session-2027-01-09.ics" download="wwol-opening-session-2027-01-09.ics">Apple</a><a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=We%2C%20Women%20of%20Light%20%E2%80%94%20Opening%20Session&startdt=2027-01-09T17:00:00Z&enddt=2027-01-09T19:00:00Z&body=Your%20Zoom%20link%20and%20preparation%20arrive%20in%20your%20welcome%20email%20from%20wewomenoflight%40ianalahi.com.%20Questions%3A%20wewomenoflight%40ianalahi.com&location=Online%20%28Zoom%29" target="_blank" rel="noopener">Outlook</a></p><p class="ty-cal"><span class="lbl">The twelve gateway sessions, January 16 &ndash; April 3:</span><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=We%2C%20Women%20of%20Light%20%E2%80%94%20Gateway%20Session&dates=20270116T090000/20270116T103000&ctz=America/Los_Angeles&recur=RRULE%3AFREQ%3DWEEKLY%3BCOUNT%3D12&details=Your%20Zoom%20link%20and%20preparation%20arrive%20in%20your%20welcome%20email%20from%20wewomenoflight%40ianalahi.com.%20Questions%3A%20wewomenoflight%40ianalahi.com&location=Online%20%28Zoom%29" target="_blank" rel="noopener">Google</a><a href="/assets/cal/wwol-gateway-sessions-2027.ics" download="wwol-gateway-sessions-2027.ics">Apple</a><a href="/assets/cal/wwol-gateway-sessions-2027.ics" download="wwol-gateway-sessions-2027.ics">Outlook</a></p></div><div class="o"><h3>Your Peace-Of-Mind Guarantee.</h3><p>Step fully into your first session. If within 24 hours you know in your heart this isn&rsquo;t your path, tell us and receive a full refund.</p></div></div><div class="ty-q"><p class="q">Questions before then?</p><p><a href="mailto:wewomenoflight@ianalahi.com">wewomenoflight@ianalahi.com</a></p></div></div></section><hr class="ty-hair"><footer><div class="wrap"><div class="top"><p class="hp">Human Powered &mdash; No AI</p><nav class="social" aria-label="Social media"><a href="https://www.instagram.com/ianalahi/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.17.4.36 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.17-1 .36-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1 0 18.6 12 6.6 6.6 0 0 0 12 5.4zm0 10.9A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3zm6.8-11.2a1.54 1.54 0 1 1-1.54-1.54 1.54 1.54 0 0 1 1.54 1.54z"/></svg></a><a href="https://www.facebook.com/ianalahi" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6c-.3 0-1.3-.13-2.46-.13-2.44 0-4.11 1.49-4.11 4.22V9.9H7.4V13h2.73v8z"/></svg></a><a href="https://youtube.com/@ianalahispiritgateways" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.5a3 3 0 0 0-2.1-2.1C19 4.9 12 4.9 12 4.9s-7 0-8.9.5A3 3 0 0 0 1 7.5 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.5 31 31 0 0 0-.5-4.5zM9.8 15.3V8.7l5.7 3.3z"/></svg></a><a href="https://linkedin.com/in/ianalahi" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.3 8.5h3.3V21H3.3zM9.5 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.3 0 3.9 2.2 3.9 5V21h-3.3v-5.7c0-1.36-.02-3.1-1.9-3.1s-2.2 1.48-2.2 3v5.8H9.5z"/></svg></a></nav><p class="foot-mail"><a href="mailto:wewomenoflight@ianalahi.com">wewomenoflight@ianalahi.com</a></p><div class="foot-progs"><a href="https://newmasculineemerging.com" target="_blank" rel="noopener">New Masculine Emerging&trade;</a><span aria-hidden="true">|</span><a href="https://awakenedsexmoneylove.com" target="_blank" rel="noopener">Awakened Sex, Money &amp; Love&trade;</a></div><div class="legal"><a href="https://www.ianalahi.com/privacy" target="_blank" rel="noopener">Privacy</a><span aria-hidden="true">&middot;</span><a href="https://www.ianalahi.com/terms" target="_blank" rel="noopener">Terms</a><span aria-hidden="true">&middot;</span><a href="https://www.ianalahi.com/disclaimer" target="_blank" rel="noopener">Disclaimer</a></div></div><p class="copy-line">&copy; 2001&ndash;2026 Iana Lahi / Spirit Gateways&reg; Institute. All worldwide rights reserved.</p></div></footer></div></body></html>
