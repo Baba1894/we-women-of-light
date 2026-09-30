@@ -173,6 +173,21 @@ footer .top{display:flex;flex-direction:column;align-items:center;gap:16px;text-
   .quote-sec .qbr{display:none}
   .quote-sec .qlead{margin-bottom:18px}
 }
+
+/* ---------- v3 (2026-09-30): Brunello header + Brunello video section, matching the sales page ---------- */
+:root{
+  --brunello-core:radial-gradient(46% 40% at 50% 44%,rgba(255,222,184,.11) 0%,rgba(255,222,184,0) 72%);
+  --brunello-base:radial-gradient(ellipse 88% 72% at 50% 46%,#8a2638 0%,#6c1a2b 32%,#4d0f1f 64%,#330914 100%);
+}
+.site{background:var(--brunello-core),var(--brunello-base);border-bottom:1px solid rgba(236,210,150,.28)}
+.brand .wm{color:var(--gold-bright)}
+.site .btn-ghost{color:#f3efe6}   /* same gold border and gold hover fill; label lightened only so it reads on the red */
+.video-sec{background:var(--brunello-core),var(--brunello-base)}
+.video-sec h2,.video-sec .join{color:var(--gold-bright)}
+.video-sec p.vlead,.video-sec p.vafter{color:#eadcd6}
+/* the video emanates a faint whitish-gold light, as on the sales page */
+.wwol-video{border-color:rgba(236,210,150,.85);
+  box-shadow:0 0 0 1px rgba(255,238,200,.25),0 0 46px 8px rgba(255,236,196,.16),0 0 130px 36px rgba(254,214,140,.09)}
 </style></head>
 <body>
 
