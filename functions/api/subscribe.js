@@ -28,19 +28,18 @@ const KEAP_BASE = "https://api.infusionsoft.com/crm/rest/v1";
    CONFIGURE ME — everything WWOL-specific lives in this block.
    Nothing below it needs to change.
 
-   All five tag IDs are null until the tags exist in Keap. A null
-   tag is silently skipped, so this file is SAFE TO DEPLOY NOW:
-   contacts are created and custom fields are written, only the
-   tagging is deferred. Fill the numbers in and redeploy.
+   Tag IDs filled in 2026-10-17 from Keap (all seven WWOL tags).
+   A null tag would be silently skipped, so a missing ID never
+   blocks contact creation.
 
    DO NOT reuse NME's tag IDs (350/326/352/342/344/346/348). The
    NME nurture sequences trigger off those; a WWOL signup carrying
    them would be dropped into the men's campaign.
    ═══════════════════════════════════════════════════════════════ */
 
-const LEAD_TAG = null;   // WWOL-Lead            — every capture, both paths
-const QUIZ_TAG = null;   // WWOL-Quiz-Complete   — quiz submits only
-const SKIP_TAG = null;   // WWOL-Skip            — skip submits only
+const LEAD_TAG = 367;    // WWOL-Lead            — every capture, both paths
+const QUIZ_TAG = 369;    // WWOL-Quiz-Complete   — quiz submits only
+const SKIP_TAG = 371;    // WWOL-Skip            — skip submits only
 
 /* IMPORTANT (see the KEAP rules): LEAD_TAG is a marker, not a trigger.
    Nothing should be triggered on WWOL-Lead. The two nurture sequences
@@ -53,10 +52,10 @@ const SKIP_TAG = null;   // WWOL-Skip            — skip submits only
    Ranges are WWOL's (14 questions, 14-56) and differ from NME's
    (10 questions, 10-40) — do not copy across. */
 const BAND_TAGS = [
-  { min: 14, max: 24, name: "The Veiled Woman",    tag: null },  // WWOL-Type-Veiled
-  { min: 25, max: 35, name: "The Awakening Woman", tag: null },  // WWOL-Type-Awakening
-  { min: 36, max: 46, name: "The Rising Woman",    tag: null },  // WWOL-Type-Rising
-  { min: 47, max: 56, name: "The Luminous Woman",  tag: null }   // WWOL-Type-Luminous
+  { min: 14, max: 24, name: "The Veiled Woman",    tag: 373 },  // WWOL-Type-Veiled
+  { min: 25, max: 35, name: "The Awakening Woman", tag: 375 },  // WWOL-Type-Awakening
+  { min: 36, max: 46, name: "The Rising Woman",    tag: 377 },  // WWOL-Type-Rising
+  { min: 47, max: 56, name: "The Luminous Woman",  tag: 379 }   // WWOL-Type-Luminous
 ];
 
 /* Custom fields, resolved by database name / label (normalized).
