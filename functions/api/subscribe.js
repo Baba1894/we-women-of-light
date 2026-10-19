@@ -1,6 +1,6 @@
 /* =============================================================
    functions/api/subscribe.js  —  Cloudflare Pages Function
-   /women form POST -> Keap (create/update contact + tags + fields)
+   /women and /waitlist form POST -> Keap (create/update contact + tags + fields)
 
    WE, WOMEN OF LIGHT (WWOL).
    Adapted from the shipped New Masculine Emerging Function. Same
@@ -15,6 +15,10 @@
      the matching archetype band tag, and write the WWOL custom
      fields. Absent => skip submit: apply LEAD + SKIP only.
 
+     list === "waitlist" (sent by /waitlist) => waitlist submit:
+     apply LEAD + WAITLIST only. Never QUIZ or SKIP, so a waitlist
+     signup can never enter the January nurture sequence.
+
    Setup: Cloudflare env var KEAP_SAK = Keap Service Account Key.
           Must be set on the WWOL Pages project, Production AND
           Preview. Env vars do NOT carry over between projects —
@@ -28,7 +32,8 @@ const KEAP_BASE = "https://api.infusionsoft.com/crm/rest/v1";
    CONFIGURE ME — everything WWOL-specific lives in this block.
    Nothing below it needs to change.
 
-   Tag IDs filled in 2026-10-17 from Keap (all seven WWOL tags).
+   Tag IDs filled in 2026-10-17 from Keap (seven WWOL tags);
+   WWOL-Waitlist (381) added 2026-10-19.
    A null tag would be silently skipped, so a missing ID never
    blocks contact creation.
 
@@ -40,6 +45,7 @@ const KEAP_BASE = "https://api.infusionsoft.com/crm/rest/v1";
 const LEAD_TAG = 367;    // WWOL-Lead            — every capture, both paths
 const QUIZ_TAG = 369;    // WWOL-Quiz-Complete   — quiz submits only
 const SKIP_TAG = 371;    // WWOL-Skip            — skip submits only
+const WAITLIST_TAG = 381;  // WWOL-Waitlist        — /waitlist submits only
 
 /* IMPORTANT (see the KEAP rules): LEAD_TAG is a marker, not a trigger.
    Nothing should be triggered on WWOL-Lead. The two nurture sequences
@@ -143,13 +149,18 @@ export async function onRequestPost(context) {
     return json({ ok: false, error: "Please check the box to subscribe." }, 422);
   }
 
+  // Waitlist submit? (sent by /waitlist). Checked first: it never carries a score.
+  const isWaitlist = data.list === "waitlist";
+
   // Quiz submit? (score present)
-  const isQuiz = data.score !== undefined && data.score !== null && String(data.score).trim() !== "";
+  const isQuiz = !isWaitlist && data.score !== undefined && data.score !== null && String(data.score).trim() !== "";
   const scoreStr  = isQuiz ? String(data.score).trim() : "";
   const archetype = isQuiz ? String(data.archetype || "").trim() : "";
 
   // Null tags are dropped, so this works before the tags exist in Keap.
-  const tagIds = (isQuiz ? [LEAD_TAG, QUIZ_TAG] : [LEAD_TAG, SKIP_TAG]).filter(t => t != null);
+  const tagIds = (isWaitlist ? [LEAD_TAG, WAITLIST_TAG]
+                 : isQuiz   ? [LEAD_TAG, QUIZ_TAG]
+                 :            [LEAD_TAG, SKIP_TAG]).filter(t => t != null);
 
   // Archetype tag (quiz only, derived server-side from the numeric score).
   if (isQuiz) {
