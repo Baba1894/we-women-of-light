@@ -70,6 +70,12 @@ const BAND_TAGS = [
    so either the label or the database name will match. */
 const CF_TARGETS = { score: "wwolquizscore", archetype: "wwolfemalearchetype" };
 
+/* Why this contact may be emailed. Keap REQUIRES this on API-created
+   contacts: without it the email lands as Non-Marketable and no
+   Follow-Up Sequence or broadcast email is delivered. The forms only
+   submit with the consent box ticked. Added 2026-11-11. */
+const OPT_IN_REASON = "Subscribed via the We, Women of Light signup form (consent box checked)";
+
 /* ═══════════════ end of configuration ═══════════════ */
 
 /* module-scope cache of resolved custom-field IDs (best-effort across
@@ -199,7 +205,8 @@ export async function onRequestPost(context) {
       duplicate_option: "Email",
       given_name: firstName,
       family_name: lastName,
-      email_addresses: [{ email, field: "EMAIL1" }]
+      email_addresses: [{ email, field: "EMAIL1" }],
+      opt_in_reason: OPT_IN_REASON
     };
     if (customFields.length) body.custom_fields = customFields;
 
